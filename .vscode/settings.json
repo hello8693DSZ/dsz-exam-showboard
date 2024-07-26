@@ -1,0 +1,29 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "MicroPython.executeButton": [
+    {
+      "text": "▶",
+      "tooltip": "运行",
+      "alignment": "left",
+      "command": "extension.executeFile",
+      "priority": 3.5
+    }
+  ],
+  "MicroPython.syncButton": [
+    {
+      "text": "$(sync)",
+      "tooltip": "同步",
+      "alignment": "left",
+      "command": "extension.execute",
+      "priority": 4
+    }
+  ]
+}
