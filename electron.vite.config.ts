@@ -3,11 +3,12 @@ import { defineConfig, externalizeDepsPlugin } from 'electron-vite';
 // Plugins
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { DevUiResolver } from 'unplugin-vue-components/resolvers';
 import Fonts from 'unplugin-fonts/vite';
 import Layouts from 'vite-plugin-vue-layouts';
 import Vue from '@vitejs/plugin-vue';
 import VueRouter from 'unplugin-vue-router/vite';
+import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 // import rawLoader from 'raw-loader'
 
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
@@ -42,11 +43,19 @@ export default defineConfig({
         ]
       }),
       Layouts(),
-      Vue(),
+      Vue({
+        template: { transformAssetUrls }
+      }),
       // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
+      Vuetify({
+        autoImport: true,
+        styles: {
+          configFile: 'src/styles/settings.scss'
+        }
+      }),
       Components({
         dts: 'src/components.d.ts',
-        resolvers: [ElementPlusResolver()],
+        resolvers: [DevUiResolver()]
       }),
       Fonts({
         google: {
@@ -69,8 +78,7 @@ export default defineConfig({
         eslintrc: {
           enabled: true
         },
-        vueTemplate: true,
-        resolvers: [ElementPlusResolver()],
+        vueTemplate: true
       }),
       createSvgIconsPlugin({
         // Specify the icon folder to be cached
