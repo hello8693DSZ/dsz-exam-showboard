@@ -8,7 +8,7 @@ export {};
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: (typeof import('./components/AppFooter.vue'))['default']
-    AppTopBar: (typeof import('./components/AppTopBar.vue'))['default']
+    AppTopBar: typeof import('./components/AppTopBar.vue')['default']
     Clock: typeof import('./components/Clock.vue')['default']
     DBtn: typeof import('vue-devui/btn/index.es.js')['Btn']
     DButton: typeof import('vue-devui/button/index.es.js')['Button']
