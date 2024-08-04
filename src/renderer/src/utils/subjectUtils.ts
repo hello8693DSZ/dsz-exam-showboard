@@ -1,4 +1,4 @@
-import { parseISO, isBefore } from 'date-fns';
+import { parseISO, isBefore, isAfter } from 'date-fns';
 import { TimeSlot } from '@renderer/interfaces/timeTable';
 
 /**
@@ -26,5 +26,27 @@ export function getCurrentTimeSlot(timeSlots: TimeSlot[]): TimeSlot | null {
     }
   }
   // 如果没有找到包含当前时间的时间段，返回null
+  return null;
+}
+
+export function getNextExamTimeSlot(timeSlots: TimeSlot[]): TimeSlot | null {
+  // 获取当前日期和时间
+  const now = new Date();
+
+  // 按照开始时间排序时间段
+  timeSlots.sort((a, b) => parseISO(a.start).getTime() - parseISO(b.start).getTime());
+
+  // 遍历排序后的时间段数组
+  for (const slot of timeSlots) {
+    // 解析时间段的开始时间
+    const startTime = parseISO(slot.start);
+    // 判断开始时间是否在当前时间之后
+    if (isAfter(startTime, now)) {
+      // 如果是，返回当前时间段
+      return slot;
+    }
+  }
+
+  // 如果没有找到开始时间在当前时间之后的时间段，返回null
   return null;
 }
