@@ -16,9 +16,6 @@ import { createApp } from 'vue';
 import { VueShowdownPlugin } from 'vue-showdown';
 import 'virtual:svg-icons-register';
 
-import 'element-plus/theme-chalk/dark/css-vars.css'
-
-
 const app = createApp(App);
 
 app.use(VueShowdownPlugin, {
