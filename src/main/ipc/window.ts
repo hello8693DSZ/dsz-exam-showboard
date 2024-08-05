@@ -24,10 +24,9 @@ const ipcWindow = {
 
     ipcMain.on('prog:loadjson', async (event) => {
       const window = BrowserWindow.fromId(event.sender.id);
-      const file = await fileUtils.readFile()
+      const file = await fileUtils.readFile();
       await window.webContents.send('common:openFile', file);
     });
-
   }
 };
 
