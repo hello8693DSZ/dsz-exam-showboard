@@ -23,6 +23,7 @@ declare module 'vue' {
     ElRow: typeof import('element-plus/es')['ElRow']
     ElTag: typeof import('element-plus/es')['ElTag']
     ElText: typeof import('element-plus/es')['ElText']
+    ExamList: typeof import('./components/ExamList.vue')['default']
     ExamStatus: typeof import('./components/ExamStatus.vue')['default']
     GgbPlayer: (typeof import('./components/GgbPlayer.vue'))['default']
     ReadmeRender: (typeof import('./components/ReadmeRender.vue'))['default']
