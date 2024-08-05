@@ -1,30 +1,38 @@
 <template>
-  <div>
-    <h1>电视猪考试看板</h1>
-
-    <el-button @click="OpenDialog">打开配置</el-button>
-
-  </div>
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <h1>电视猪考试看板</h1>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
+        <v-btn @click="openDialog" color="primary" dark> 打开配置 </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>
 import { useRouter } from 'vue-router';
 import { useAppStore } from '@renderer/stores/app';
 
-const globalStore = useAppStore()
+const globalStore = useAppStore();
 
-
-function OpenDialog() {
+function openDialog() {
   window.electron.ipcRenderer.send('prog:loadjson');
 }
 
 window.electron.ipcRenderer.on('common:openFile', (event, message) => {
   console.log(message.data);
-  let examdata = JSON.parse(message.data);
-  globalStore.$patch(examdata);
+  let examData = JSON.parse(message.data);
+  globalStore.$patch(examData);
   router.push('/infoPage');
 });
 
 const router = useRouter();
-//
 </script>
+
+<style scoped>
+/* 根据需要添加额外的样式 */
+</style>

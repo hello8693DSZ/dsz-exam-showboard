@@ -1,45 +1,40 @@
 <template>
-  <div class="main-area">
-    <h1>{{ globalStore.examName }}</h1>
+  <v-container class="main-area">
+    <v-row>
+      <v-col cols="12">
+        <h1>{{ globalStore.examName }}</h1>
+      </v-col>
+    </v-row>
 
-    <el-row>
-      <el-col :span="13">
-        <SubjectInfo
-          v-if="isExamRunning"
-          :exam="runningExam"
-        ></SubjectInfo>
-        <h2 v-else>
-          考试未开始
-        </h2>
-      </el-col>
-      <el-col :span="11">
-        <div v-for="exam in globalStore.examInfos">
-          <ExamStatus :exam="exam" />
-        </div>
-    </el-col>
-    </el-row>
-  </div>
+    <v-row>
+      <v-col cols="6">
+        <Clock></Clock>
+        <SubjectInfo :exam="currentExam" />
+      </v-col>
+
+      <v-col cols="6">
+        <ExamList :exam="globalStore.examInfos"></ExamList>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
 import { useAppStore } from '@renderer/stores/app';
-import { getCurrentTimeSlot } from '@renderer/utils/subjectUtils'
+import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subjectUtils';
 
 const globalStore = useAppStore();
 
-const router = useRouter();
-
 getCurrentTimeSlot(globalStore.examInfos);
 
-const runningExam = computed(() => {
-  return getCurrentTimeSlot(globalStore.examInfos);
+const currentExam = computed(() => {
+  const current = getCurrentTimeSlot(globalStore.examInfos);
+  if (current == null) {
+    return getNextExamTimeSlot(globalStore.examInfos);
+  } else {
+    return current;
+  }
 });
-
-const isExamRunning = computed(() =>{
-  return getCurrentTimeSlot(globalStore.examInfos) == null;
-});
-
 
 //
 </script>
@@ -48,5 +43,9 @@ const isExamRunning = computed(() =>{
 .main-area {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.exam-list {
+  margin: 20px;
 }
 </style>

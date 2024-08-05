@@ -11,7 +11,6 @@
             dense
             class="text-h5"
           >
-
             <template #header.name>
               <span class="text-h5">科目</span>
             </template>
@@ -44,7 +43,6 @@
       </v-row>
     </v-container>
   </v-card>
-
 </template>
 
 <script setup lang="ts">
