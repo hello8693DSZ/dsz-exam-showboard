@@ -6,7 +6,6 @@ export interface TimeSlot {
 
 export interface ExamSchedule {
   examName: string;
-  roomName: string;
   message: string;
   examInfos: TimeSlot[];
 }
