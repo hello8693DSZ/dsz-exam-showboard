@@ -1,28 +1,27 @@
 <template>
-  <div class="exam-status">
-    <el-row class="exam-info-bar">
-      <el-col :span="3">
-        <strong>{{ exam.name }}</strong>
-      </el-col>
+  <v-card class="exam-status">
+    <v-card-text class="exam-info-bar">
+      <div class="d-flex flex-row">
+        <div class="flex-grow-1">
+          <strong>{{ exam?.name || '未知名称' }}</strong>
+        </div>
+        &nbsp;
+        <div>{{ formatDateTime(exam?.start) }} ~ {{ formatDateTime(exam?.end) }}</div>
+      </div>
 
-      <el-col :span="8">
-        {{ formatDateTime(exam.start) }} ~ {{ formatDateTime(exam.end) }}
-      </el-col>
-      <el-col :span="3">
-        <el-text class="mx-1" size="large" :type="statusColor">{{ statusText }}</el-text>
-
-      </el-col>
-    </el-row>
-  </div>
+      <div class="status-text-large" :class="statusColor">{{ statusText }}</div>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script setup>
+import { ref, onMounted, computed } from 'vue';
 import moment from 'moment';
 
 const props = defineProps({
   exam: {
     type: Object,
-    required: true
+    default: () => null
   }
 });
 
@@ -33,9 +32,9 @@ const statusColor = computed(() => {
   const start = moment(props.exam.start);
   const end = moment(props.exam.end);
 
-  if (now.isBefore(start)) return 'running';
-  if (now.isBetween(start, end)) return 'success';
-  if (now.isAfter(end)) return 'error';
+  if (now.isBefore(start)) return 'warning--text';
+  if (now.isBetween(start, end)) return 'success--text';
+  if (now.isAfter(end)) return 'error--text';
 });
 
 const statusText = computed(() => {
@@ -51,16 +50,34 @@ const statusText = computed(() => {
 
 <style scoped>
 .exam-status {
-
-  padding: 10px;
-  border: 1px solid #e9e9e9;
   margin-bottom: 10px;
 }
 
 .exam-info-bar {
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.4em;
+}
+
+.small-screen .exam-info-bar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.status-text-large {
+  font-size: 1.05em;
+}
+
+.warning--text {
+  color: orange;
+}
+
+.success--text {
+  color: green;
+}
+
+.error--text {
+  color: red;
 }
 </style>
