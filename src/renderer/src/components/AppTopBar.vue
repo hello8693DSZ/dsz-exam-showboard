@@ -17,7 +17,6 @@
         <v-btn @click="toggleFullScreen">{{ isFullScreen ? '还原' : '全屏' }}</v-btn>
         <!-- 方便触屏全屏 --> 
         <v-btn @click="router.push('/mainWindow')">退出当前配置</v-btn>
-        <!--原来携程打开配置文件了，这分明是退出吗！ -->
       </div>
     </template>
   </v-app-bar>
