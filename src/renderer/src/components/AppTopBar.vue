@@ -14,7 +14,7 @@
 
     <template #append>
       <div class="ga-4">
-        <v-btn @click="router.push('/mainWindow')">打开配置</v-btn>
+        <v-btn @click="router.push('/mainWindow')">菜单</v-btn>
       </div>
     </template>
   </v-app-bar>
