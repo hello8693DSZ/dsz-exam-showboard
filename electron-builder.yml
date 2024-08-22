@@ -1,5 +1,5 @@
 appId: org.dszdev.examshowboard
-productName: DSZ ExamShowboard
+productName: ExamShowboard
 directories:
   buildResources: build
 files:
