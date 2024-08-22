@@ -10,7 +10,7 @@
     }}</span>
   </v-system-bar>
   <v-app-bar :elevation="2" class="position-fixed">
-    <v-app-bar-title>DSZ考试看板</v-app-bar-title>
+    <v-app-bar-title>{{ profileStore.appHeader }}</v-app-bar-title>
 
     <template #append>
       <div class="ga-4">
@@ -22,6 +22,9 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
+import { useProfileStore } from '../stores/app';
+
+const profileStore = useProfileStore();
 
 const ipcHandleExit = () => window.electron.ipcRenderer.send('prog:exit');
 

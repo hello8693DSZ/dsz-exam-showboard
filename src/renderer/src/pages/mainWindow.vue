@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-btn color="primary"  @click="openDialog" dark> 打开配置 </v-btn>
+        <v-btn color="primary" dark @click="openDialog"> 打开配置 </v-btn>
       </v-col>
     </v-row>
   </v-container>
