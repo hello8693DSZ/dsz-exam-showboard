@@ -1,7 +1,7 @@
 // Utilities
 import { defineStore } from 'pinia';
 
-export const useAppStore = defineStore('app', {
+export const useProfileStore = defineStore('app', {
   state: () => ({
     examName: '考试名称',
 

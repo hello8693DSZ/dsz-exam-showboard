@@ -20,10 +20,10 @@
 </template>
 
 <script setup>
-import { useAppStore } from '@renderer/stores/app';
+import { useProfileStore } from '@renderer/stores/app';
 import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subjectUtils';
 
-const globalStore = useAppStore();
+const globalStore = useProfileStore();
 
 getCurrentTimeSlot(globalStore.examInfos);
 

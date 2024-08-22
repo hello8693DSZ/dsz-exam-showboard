@@ -15,9 +15,9 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-import { useAppStore } from '@renderer/stores/app';
+import { useProfileStore } from '@renderer/stores/app';
 
-const globalStore = useAppStore();
+const globalStore = useProfileStore();
 
 function openDialog() {
   window.electron.ipcRenderer.send('prog:loadjson');
