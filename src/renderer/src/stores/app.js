@@ -8,5 +8,6 @@ export const useAppStore = defineStore('app', {
     roomName: '考场名称',
     message: '考试提醒信息',
     examInfos: []
-  })
+  }),
+  persist: true
 });
