@@ -54,7 +54,8 @@ class WindowManager {
       return this.MainWindow;
     }
     this.MainWindow = this.createWindow('mainWindow', {
-      title: 'DSZ ExamComposer 制卷系统'
+      title: 'DSZ ExamShowboard 考试看板',
+      fullscreen: true
     });
     this.MainWindow.on('close', () => {
       this.MainWindow = undefined;
