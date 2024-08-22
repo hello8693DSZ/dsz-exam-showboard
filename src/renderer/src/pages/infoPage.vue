@@ -44,8 +44,4 @@ const currentExam = computed(() => {
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.exam-list {
-  margin: 20px;
-}
 </style>

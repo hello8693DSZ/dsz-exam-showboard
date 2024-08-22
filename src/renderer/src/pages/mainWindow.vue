@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-btn @click="openDialog" color="primary" dark> 打开配置 </v-btn>
+        <v-btn color="primary"  @click="openDialog" dark> 打开配置 </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -25,7 +25,7 @@ function openDialog() {
 
 window.electron.ipcRenderer.on('common:openFile', (event, message) => {
   console.log(message.data);
-  let examData = JSON.parse(message.data);
+  const examData = JSON.parse(message.data);
   globalStore.$patch(examData);
   router.push('/infoPage');
 });
