@@ -5,7 +5,7 @@
       new Date().toLocaleTimeString('en-US', {
         hour: 'numeric',
         minute: 'numeric',
-        hour12: true
+        hour12: false
       })
     }}</span>
   </v-system-bar>
@@ -14,7 +14,7 @@
 
     <template #append>
       <div class="ga-4">
-        <v-btn @click="router.push('/mainWindow')">菜单</v-btn>
+        <v-btn @click="router.push('/mainWindow')">回到主页</v-btn>
       </div>
     </template>
   </v-app-bar>
