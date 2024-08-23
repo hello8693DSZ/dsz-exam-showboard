@@ -36,3 +36,7 @@ $ yarn build:mac
 # For Linux
 $ yarn build:linux
 ```
+
+## 说明
+
+如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。
