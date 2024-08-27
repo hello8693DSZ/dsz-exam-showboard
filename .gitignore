@@ -7,3 +7,4 @@ examples
 .idea/material_theme_project_new.xml
 .idea/inspectionProfiles/Project_Default.xml
 examples/config.json
+*.d.ts
