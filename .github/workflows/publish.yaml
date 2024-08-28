@@ -12,6 +12,13 @@ jobs:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
         node-version: [20.x]
+        include:
+          - os: windows-latest
+            build_all: false
+          - os: macos-latest
+            build_all: true
+          - os: ubuntu-latest
+            build_all: true
 
     steps:
       - name: Checkout
@@ -30,11 +37,11 @@ jobs:
         run: yarn build:win
 
       - name: Build and package for macOS
-        if: matrix.os == 'macos-latest'
+        if: matrix.os == 'macos-latest' && github.event.release.prerelease == false
         run: yarn build:mac
 
       - name: Build and package for Linux
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest' && github.event.release.prerelease == false
         run: yarn build:linux
 
       - name: Upload artifact for Windows
@@ -43,20 +50,20 @@ jobs:
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: dist/*.exe
-          asset_name: ExamShowboard-Windows.exe
+          asset_name: ExamShowboard-Windows-amd64.exe
           asset_content_type: application/octet-stream
 
       - name: Upload artifact for macOS
-        if: matrix.os == 'macos-latest'
+        if: matrix.os == 'macos-latest' && github.event.release.prerelease == false
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: dist/*.dmg
-          asset_name: ExamShowboard-macOS.dmg
+          asset_name: ExamShowboard-macOS-arm64.dmg
           asset_content_type: application/octet-stream
 
       - name: Upload artifact for Linux
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest' && github.event.release.prerelease == false
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
