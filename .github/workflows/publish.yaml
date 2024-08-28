@@ -1,3 +1,4 @@
+# .github/workflows/publish.yaml
 name: Build and Package Electron App on Release
 
 on:
@@ -47,13 +48,17 @@ jobs:
         if: matrix.os == 'ubuntu-latest' && github.event.release.prerelease == false
         run: yarn build:linux
 
+      - name: Get version from package.json
+        id: get_version
+        run: echo "::set-output name=version::$(node -p \"require('./package.json').version\")"
+
       - name: Upload artifact for Windows
         if: matrix.os == 'windows-latest'
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: dist/*.exe
-          asset_name: ExamShowboard-Windows-amd64.exe
+          asset_path: dist/dsz-exam-showboard-${{ steps.get_version.outputs.version }}-setup.exe
+          asset_name: ExamShowboard-Windows-amd64-${{ steps.get_version.outputs.version }}-setup.exe
           asset_content_type: application/octet-stream
 
       - name: Upload artifact for macOS
@@ -61,8 +66,8 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: dist/*.dmg
-          asset_name: ExamShowboard-macOS-arm64.dmg
+          asset_path: dist/dsz-exam-showboard-${{ steps.get_version.outputs.version }}.dmg
+          asset_name: ExamShowboard-macOS-arm64-${{ steps.get_version.outputs.version }}.dmg
           asset_content_type: application/octet-stream
 
       - name: Upload artifact for Linux
@@ -70,6 +75,6 @@ jobs:
         uses: actions/upload-release-asset@v1
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: dist/*.AppImage
-          asset_name: ExamShowboard-Linux.AppImage
+          asset_path: dist/dsz-exam-showboard-${{ steps.get_version.outputs.version }}.AppImage
+          asset_name: ExamShowboard-Linux-amd64-${{ steps.get_version.outputs.version }}-setup.AppImage
           asset_content_type: application/octet-stream
