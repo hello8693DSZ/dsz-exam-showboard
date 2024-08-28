@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-    if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
 
     strategy:
       matrix:
@@ -17,14 +16,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
+        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
+
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
+        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: yarn install
+        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
+
 
       - name: Build and package for Windows
         if: matrix.os == 'windows-latest'
