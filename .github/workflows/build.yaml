@@ -1,6 +1,9 @@
 name: Build and Package Electron App
 
-on: [ push ]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
