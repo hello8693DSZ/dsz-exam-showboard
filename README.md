@@ -21,8 +21,7 @@ An Electron application with Vue and TypeScript.
 
 一款显示当前时间与考试详细信息的看板类软件。
 
-| - | - | - |
-| 下载 | [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions) |
+下载 [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions)
 
 </div>
 
