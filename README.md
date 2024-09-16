@@ -5,8 +5,8 @@
 # dsz-exam-composer
 # DSZ考试看板
 
-![WelcomePage](Screenshots/WelcomePage.png)
-![ExamPage](Screenshots/ExamPage.png)
+![WelcomePage](ScreenShots/WelcomePage.png)
+![ExamPage](ScreenShots/ExamPage.png)
 
 [![stars](https://img.shields.io/github/stars/hello8693DSZ/dsz-exam-showboard?label=Stars)](https://github.com/hello8693DSZ/dsz-exam-showboard)
 [![forks](https://img.shields.io/github/forks/hello8693DSZ/dsz-exam-showboard?label=Forks)](https://github.com/hello8693DSZ/dsz-exam-showboard)
@@ -21,7 +21,6 @@ An Electron application with Vue and TypeScript.
 
 一款显示当前时间与考试详细信息的看板类软件。
 
-|  |  |  |
 | - | - | - |
 | 下载 | [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions) |
 
