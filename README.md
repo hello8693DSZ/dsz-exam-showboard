@@ -18,9 +18,9 @@
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ)](https://qm.qq.com/q/zDiEipHsaI)
 
-An Electron application with Vue and TypeScript.
-
 一款显示当前时间与考试详细信息的看板类软件。
+
+本软件使用Vue + TypeScript + JavaScript制作，使用Node.js+Electron完善系统级功能并打包。
 
 下载 [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions)
 
@@ -36,12 +36,12 @@ An Electron application with Vue and TypeScript.
 - [X] 上方展示`考试标题`
 - [X] 左侧展示`当前时间`、`考试科目`、`开始/结束时间`、`考试状态`
 - [X] 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
-- [X] 考试结束前15分钟<font color=yellow>黄字</font>提醒
+- [X] 考试结束前15分钟黄字提醒
 - [ ] 后续将支持集控
 
 ## 开始使用
 
-### 下载安装程序并运行（默认保存在`AppData\Local\Programs\dsz-exam-showboard`），安装完成后先写好配置文件，再运行桌面快捷方式
+### 下载安装程序并运行（默认安装在`AppData\Local\Programs\dsz-exam-showboard`），安装完成后先写好配置文件，再运行桌面快捷方式
 
 ### 配置文件格式为`json`，模板如下
 ```json
@@ -70,6 +70,8 @@ An Electron application with Vue and TypeScript.
 💡如果您遇到一个`Bug`，或者需要提出一项新的`功能`，请提交[`Issue`](https://github.com/hello8693DSZ/dsz-exam-showboard/issues)。
 
 👥您也可以加入[`QQ群|901670561`](https://qm.qq.com/q/zDiEipHsaI)获取帮助或交流讨论。
+
+🛠️欢迎为本软件进行改进或编写新功能的同学提交[`Pull Request`](https://github.com/hello8693DSZ/dsz-exam-showboard/pulls)
 
 ## 开发
 
