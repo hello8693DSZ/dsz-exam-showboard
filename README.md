@@ -37,7 +37,7 @@
 ### 下载
 对于普通用户，可以在以下渠道下载到本软件
 
-[GitHub下载](https://img.shields.io/github/downloads/hello8693DSZ/dsz-exam-showboard/total?style=social&label=Downloads&logo=github)](https://github.com/hello8693DSZ/dsz-exam-showboard/releases/latest)
+下载 [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions)
 
 ### 准备配置文件
 #### 新建格式为`json`的配置文件，模板如下
