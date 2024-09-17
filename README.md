@@ -5,8 +5,8 @@
 # dsz-exam-composer
 # DSZ考试看板
 
-![WelcomePage](ScreenShots/WelcomePage.png)
-![ExamPage](ScreenShots/ExamPage.png)
+![WelcomePage](Screenshots/WelcomePage.png)
+![ExamPage](Screenshots/ExamPage.png)
 
 [![stars](https://img.shields.io/github/stars/hello8693DSZ/dsz-exam-showboard?label=Stars)](https://github.com/hello8693DSZ/dsz-exam-showboard)
 [![forks](https://img.shields.io/github/forks/hello8693DSZ/dsz-exam-showboard?label=Forks)](https://github.com/hello8693DSZ/dsz-exam-showboard)
@@ -41,18 +41,23 @@ An Electron application with Vue and TypeScript.
 
 ## 开始使用
 
-### 下载安装程序并运行（默认保存在C盘），安装完成后先写好配置文件，再运行桌面快捷方式
+### 下载安装程序并运行（默认保存在`AppData\Local\Programs\dsz-exam-showboard`），安装完成后先写好配置文件，再运行桌面快捷方式
 
 ### 配置文件格式为`json`，模板如下
 ```json
 {
-    "examName": "",
-    "message": "",
+    "examName": "考试名称",
+    "message": "副标题",
     "examInfos": [
         {
-            "name": "",
-            "start": "20XX-XX-XXTXX:XX:XX",
-            "end": "20XX-XX-XXTXX:XX:XX"
+            "name": "科目",
+            "start": "2024-09-01T07:00:00",
+            "end": "2024-09-01T08:00:00"
+        },
+        {
+            "name": "科目",
+            "start": "2024-09-01T09:00:00",
+            "end": "2024-09-01T10:00:00"
         }
     ]
 }
