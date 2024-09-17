@@ -15,6 +15,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues-search/hello8693DSZ/dsz-exam-showboard?query=is%3Aopen&style=social-square&logo=github&label=Issues&color=%233fb950)](https://github.com/hello8693DSZ/dsz-exam-showboard/issues)
 [![Beta](https://img.shields.io/github/v/release/hello8693DSZ/dsz-exam-showboard?include_prereleases&style=social-square&label=测试版)](https://github.com/hello8693DSZ/dsz-exam-showboard/releases/)
 [![Github Last Commit](https://img.shields.io/github/last-commit/hello8693DSZ/dsz-exam-showboard)](https://github.com/hello8693DSZ/dsz-exam-showboard/commits/master)
+[![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ)](https://qm.qq.com/q/zDiEipHsaI)
 
 An Electron application with Vue and TypeScript.
