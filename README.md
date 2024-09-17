@@ -35,7 +35,7 @@ An Electron application with Vue and TypeScript.
 - [X] 上方展示`考试标题`
 - [X] 左侧展示`当前时间`、`考试科目`、`开始/结束时间`、`考试状态`
 - [X] 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
-- [X] 考试结束前15分钟<font color=yellow>黄字</font>提醒
+- [X] 考试结束前15分钟 <font color=yellow>黄字</font> 提醒
 - [ ] 后续将支持集控
 
 ## 开始使用
