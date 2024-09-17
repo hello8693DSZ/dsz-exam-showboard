@@ -1,6 +1,6 @@
 <div align="center">
 
-<image src="resources/icon.png" height="48"/>
+<image src="resources/icon.png" height="64"/>
 
 # dsz-exam-composer
 # DSZ考试看板
@@ -25,20 +25,24 @@ An Electron application with Vue and TypeScript.
 
 </div>
 
-> [!important]
-> **此项目仍在早期开发中，使用过程中可能会遇到一些未知的问题！**
+> [!warning]
+> **此项目仍在早期开发中，暂未提供正式发行版。**
+> 
+> **使用过程中可能会遇到一些未知的问题！**
 
 ## 功能
 - [X] 起始页展示`打开配置`、`直接进入看板`按钮
 - [X] 上方展示`考试标题`
 - [X] 左侧展示`当前时间`、`考试科目`、`开始/结束时间`、`考试状态`
 - [X] 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
-- [X] 考试结束前15分钟 <font color=yellow>黄字</font> 提醒
+- [X] 考试结束前15分钟<font color=yellow>`黄字`</font>提醒
 - [ ] 后续将支持集控
 
 ## 开始使用
 
-### 新建格式为`json`的配置文件，模板如下
+### 下载安装程序并运行（默认保存在C盘），安装完成后先写好配置文件，再运行桌面快捷方式
+
+### 配置文件格式为`json`，模板如下
 ```json
 {
     "examName": "",
@@ -53,7 +57,13 @@ An Electron application with Vue and TypeScript.
 }
 ```
 
-### 运行主程序，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮进入考试看板，继续使用上次加载的配置。 
+### 进入起始页面后，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮进入考试看板，继续使用上次加载的配置。 
+
+## 提出问题&交流讨论
+
+💡如果您遇到一个`Bug`，或者需要提出一项新的`功能`，请提交[`Issue`](https://github.com/hello8693DSZ/dsz-exam-showboard/issues)。
+
+👥您也可以加入[`QQ群|901670561`](https://qm.qq.com/q/zDiEipHsaI)获取帮助或交流讨论。
 
 ## 开发
 
@@ -95,6 +105,13 @@ $ yarn build:linux
 ### 说明
 
 如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。
+
+> [!important]
+> **该项目被以下项目推荐**
+> 
+> [https://github.com/Jursin/Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares)
+> 
+> [https://github.com/kriastans/Awesome-Iwb](https://github.com/kriastans/Awesome-Iwb)
 
 ## Stars 历史
 
