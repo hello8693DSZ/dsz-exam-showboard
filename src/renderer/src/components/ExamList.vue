@@ -107,7 +107,7 @@ onMounted(() => {
       ...exam,
       status: getStatusText(exam)
     }));
-  }, 1000); // 60000 ms = 1 minute
+  }, 1000); // 1000 ms = 1 second
 
   onUnmounted(() => {
     clearInterval(interval);
