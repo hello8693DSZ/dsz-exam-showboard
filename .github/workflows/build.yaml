@@ -11,8 +11,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [ windows-latest ]
-        node-version: [ 20.x ]
+        os: [windows-latest]
+        node-version: [20.x]
 
     steps:
       - name: Checkout
