@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { reacive, computed } from 'vue';
+import { reactive, computed, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps({
   exam: {
@@ -55,9 +55,13 @@ const props = defineProps({
   }
 });
 
+const state = reactive({
+  exams: props.exam
+});
+
 // Computed properties and methods
 const sortedExams = computed(() => {
-  return props.exam.sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
+  return state.exams.sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
 });
 
 const headers = [
@@ -87,10 +91,28 @@ function getStatusText(item: any): string {
   const startTime = new Date(item.start);
   const endTime = new Date(item.end);
 
-  if (now < startTime) return '未开始';
-  else if (now >= startTime && now <= endTime) return '进行中';
-  else return '已结束';
+  if (now < startTime) {
+    return '未开始';
+  } else if (now >= startTime && now <= endTime) {
+    return '进行中';
+  } else {
+    return '已结束';
+  }
 }
+
+// Update exams every minute
+onMounted(() => {
+  const interval = setInterval(() => {
+    state.exams = state.exams.map((exam) => ({
+      ...exam,
+      status: getStatusText(exam)
+    }));
+  }, 1000); // 60000 ms = 1 minute
+
+  onUnmounted(() => {
+    clearInterval(interval);
+  });
+});
 </script>
 
 <style scoped>
