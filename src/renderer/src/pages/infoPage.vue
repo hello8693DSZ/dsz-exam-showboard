@@ -45,10 +45,10 @@ const currentExam = computed(() => {
 }
 
 .large-title {
-  font-size: 4em; /* 放大h1文字 */
+  font-size: 3em; /* 放大h1文字 */
 }
 
 .medium-title {
-  font-size: 2em; /* 略小一点的h2文字 */
+  font-size: 1em; /* 略小一点的h2文字 */
 }
 </style>
