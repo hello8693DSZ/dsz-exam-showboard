@@ -2,7 +2,8 @@
   <v-container class="main-area">
     <v-row>
       <v-col cols="12">
-        <h1>{{ globalStore.examName }}</h1>
+        <h1 class="large-title">{{ globalStore.examName }}</h1>
+        <h2 class="medium-title">{{ globalStore.message }}</h2>
       </v-col>
     </v-row>
 
@@ -35,13 +36,19 @@ const currentExam = computed(() => {
     return current;
   }
 });
-
-//
 </script>
 
 <style scoped>
 .main-area {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.large-title {
+  font-size: 3em; /* 放大h1文字 */
+}
+
+.medium-title {
+  font-size: 1em; /* 略小一点的h2文字 */
 }
 </style>
