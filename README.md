@@ -1,4 +1,4 @@
-# DSZ考试展板·改（指不定期对原项目修修补补）
+# 考试展板（原DSZ考试展板）
 
 ![view](image/README/view.png)
 
@@ -74,6 +74,8 @@
 
 ## 开发
 
+### 环境要求
+
 要在本地编译应用您需要安装以下负载和工具
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
@@ -81,6 +83,11 @@
 ### 注意事项
 
 必须使用Yarn包管理。Node版本要求为20。
+
+### 开发进度
+
+- 在`main`分支上保留原作者`0.1.0`版本
+- 正在`dev`分支上开发`1.1-Malkuth`版本
 
 ### Project Setup
 
