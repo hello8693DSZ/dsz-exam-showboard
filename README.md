@@ -1,4 +1,4 @@
-# DSZ考试展板
+# DSZ考试展板·改（指不定期对原项目修修补补）
 
 ![view](image/README/view.png)
 
