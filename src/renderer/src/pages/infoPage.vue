@@ -21,20 +21,22 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useProfileStore } from '@renderer/stores/app';
 import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subjectUtils';
 
 const globalStore = useProfileStore();
+const currentExam = ref(null);
 
-getCurrentTimeSlot(globalStore.examInfos);
-
-const currentExam = computed(() => {
+const updateCurrentExam = () => {
   const current = getCurrentTimeSlot(globalStore.examInfos);
-  if (current == null) {
-    return getNextExamTimeSlot(globalStore.examInfos);
-  } else {
-    return current;
-  }
+  currentExam.value = current ? current : getNextExamTimeSlot(globalStore.examInfos);
+};
+
+onMounted(() => {
+  updateCurrentExam();
+  const interval = setInterval(updateCurrentExam, 20000); // 每20秒刷新一次
+  onUnmounted(() => clearInterval(interval));
 });
 </script>
 
