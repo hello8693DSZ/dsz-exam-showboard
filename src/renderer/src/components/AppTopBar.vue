@@ -5,6 +5,7 @@
     <template #append>
       <div class="ga-4">
         <v-btn @click="router.push('/mainWindow')">回到主页</v-btn>
+        <v-btn @click="router.push('/about')">关于</v-btn>
         <v-icon icon="mdi-window-close" @click="ipcHandleExit"></v-icon>
       </div>
     </template>
