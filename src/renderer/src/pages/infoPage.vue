@@ -21,19 +21,45 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useProfileStore } from '@renderer/stores/app';
 import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subjectUtils';
 
 const globalStore = useProfileStore();
+const currentExam = ref(null);
+let timeout = null;
 
-getCurrentTimeSlot(globalStore.examInfos);
-
-const currentExam = computed(() => {
+const updateCurrentExam = () => {
   const current = getCurrentTimeSlot(globalStore.examInfos);
-  if (current == null) {
-    return getNextExamTimeSlot(globalStore.examInfos);
-  } else {
-    return current;
+  currentExam.value = current ? current : getNextExamTimeSlot(globalStore.examInfos);
+};
+
+const scheduleNextUpdate = () => {
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+
+  const nextExam = getNextExamTimeSlot(globalStore.examInfos);
+  if (nextExam) {
+    const nextEndTime = new Date(nextExam.end).getTime();
+    const now = Date.now();
+    const delay = nextEndTime - now + 60000; // 下一次考试结束时间 + 1分钟
+
+    timeout = setTimeout(() => {
+      updateCurrentExam();
+      scheduleNextUpdate();
+    }, delay);
+  }
+};
+
+onMounted(() => {
+  updateCurrentExam();
+  scheduleNextUpdate();
+});
+
+onUnmounted(() => {
+  if (timeout) {
+    clearTimeout(timeout);
   }
 });
 </script>
