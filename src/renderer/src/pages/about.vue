@@ -12,7 +12,7 @@
             <p>版本号： 1.1.0-Malkuth</p>
             <p>开发者：Hello8963 & Mkstoler4096</p>
             <v-btn
-              href="https://github.com/Hello8963/exam-board"
+              href="https://github.com/MKStoler4096/dsz-exam-showboard-next"
               target="_blank"
               color="primary"
               class="mt-4"

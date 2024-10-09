@@ -11,6 +11,7 @@
         考试状态: <span :class="statusColor">{{ statusText }}</span>
       </div>
       <div v-if="isWarning" class="text-h5 text--warning">考试即将结束</div>
+      <div v-if="showRemainingTime" class="text-h5 text--info">剩余时间: {{ remainingTime }}</div>
     </v-card-text>
   </v-card>
 
@@ -69,6 +70,27 @@ const isWarning = computed(() => {
   return now.value >= fifteenMinutesBeforeEnd && now.value < end;
 });
 
+const showRemainingTime = computed(() => {
+  if (!props.exam) return false;
+
+  const start = new Date(props.exam.start);
+  const end = new Date(props.exam.end);
+  const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
+
+  return now.value >= fifteenMinutesBeforeStart && now.value < end;
+});
+
+const remainingTime = computed(() => {
+  if (!props.exam) return '';
+
+  const end = new Date(props.exam.end);
+  const timeDiff = end.getTime() - now.value.getTime();
+  const minutes = Math.floor(timeDiff / (1000 * 60));
+  const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+  return `${minutes}分${seconds}秒`;
+});
+
 // Update the current time every second
 const updateNow = () => {
   now.value = new Date();
@@ -84,6 +106,10 @@ updateNow();
 
 .text--warning {
   color: #ffc107 !important; /* Vuetify's default warning color */
+}
+
+.text--info {
+  color: #17a2b8 !important; /* Info color */
 }
 
 .status-before {
