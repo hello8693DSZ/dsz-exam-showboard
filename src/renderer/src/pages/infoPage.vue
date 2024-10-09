@@ -27,16 +27,40 @@ import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subject
 
 const globalStore = useProfileStore();
 const currentExam = ref(null);
+let timeout = null;
 
 const updateCurrentExam = () => {
   const current = getCurrentTimeSlot(globalStore.examInfos);
   currentExam.value = current ? current : getNextExamTimeSlot(globalStore.examInfos);
 };
 
+const scheduleNextUpdate = () => {
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+
+  const nextExam = getNextExamTimeSlot(globalStore.examInfos);
+  if (nextExam) {
+    const nextEndTime = new Date(nextExam.end).getTime();
+    const now = Date.now();
+    const delay = nextEndTime - now + 60000; // 下一次考试结束时间 + 1分钟
+
+    timeout = setTimeout(() => {
+      updateCurrentExam();
+      scheduleNextUpdate();
+    }, delay);
+  }
+};
+
 onMounted(() => {
   updateCurrentExam();
-  const interval = setInterval(updateCurrentExam, 20000); // 每20秒刷新一次
-  onUnmounted(() => clearInterval(interval));
+  scheduleNextUpdate();
+});
+
+onUnmounted(() => {
+  if (timeout) {
+    clearTimeout(timeout);
+  }
 });
 </script>
 

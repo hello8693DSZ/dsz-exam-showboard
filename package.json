@@ -1,7 +1,7 @@
 {
   "name": "examshowboard",
-  "version": "1.0.0.1",
-  "description": "考试展板",
+  "version": "1.1.0",
+  "description": "电子考试展示板",
   "main": "./out/main/index.js",
   "author": "Hello8693 <hello8693@hello8693.xyz>",
   "homepage": "https://dsz.hello8693.xyz/",
