@@ -24,6 +24,9 @@
 
 一款显示当前时间与考试详细信息的看板类软件
 
+</div>
+
+<div align="center">
 <table>
     <tr>
         <td align="center">下载</td>
@@ -31,7 +34,6 @@
         <td align="center"><a href="https://github.com/MKStoler4096/dsz-exam-showboard-next/actions">Actions<a/></td>
     </tr>
 </table>
-
 </div>
 
 > [!tip]
@@ -48,9 +50,11 @@
 ## 开始使用
 
 - 下载安装程序并运行
+
 默认安装在`AppData\Local\Programs\dsz-exam-showboard`
 
 - 编写`json`配置文件
+
 新建文件`exam_config.json`，模板如下
 ```json
 {
