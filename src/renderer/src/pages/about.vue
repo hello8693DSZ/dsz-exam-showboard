@@ -10,6 +10,15 @@
             </p>
             <p>本应用程序旨在为考生提供便捷的考试信息查看体验。</p>
             <p>版本号： 1.1.0-Malkuth</p>
+            <p>开发者：Hello8963 & Mkstoler4096</p>
+            <v-btn
+              href="https://github.com/Hello8963/exam-board"
+              target="_blank"
+              color="primary"
+              class="mt-4"
+            >
+              在 GitHub 上查看源代码
+            </v-btn>
           </v-card-text>
         </v-card>
       </v-col>

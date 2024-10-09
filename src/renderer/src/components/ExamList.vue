@@ -73,6 +73,7 @@ const headers = [
 
 const formatTime = (isoString: string) => {
   const date = new Date(isoString);
+  date.setSeconds(date.getSeconds() + 1); // 加1秒
   return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
 };
 
