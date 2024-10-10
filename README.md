@@ -1,97 +1,94 @@
-# 考试展板（原DSZ考试展板）
+<div align="center">
 
-![view](image/README/view.png)
+<image src="resources/icon.png" height="64"/>
 
-[![stars](https://img.shields.io/github/stars/hello8693DSZ/dsz-exam-showboard?label=Stars)](https://github.com/hello8693DSZ/dsz-exam-showboard)
-[![Release](https://img.shields.io/github/downloads/hello8693DSZ/dsz-exam-showboard/total?style=social&label=Downloads&logo=github)](https://github.com/hello8693DSZ/dsz-exam-showboard/releases/latest)
-[![Beta](https://img.shields.io/github/v/release/hello8693DSZ/dsz-exam-showboard?include_prereleases&style=social-square&label=测试版)](https://github.com/hello8693DSZ/dsz-exam-showboard/releases/)
+# dsz-exam-showboard-next
+# DSZ考试看板 next（原DSZ考试看板）
 
-## 软件介绍
+![WelcomePage](/.Screenshots/WelcomePage.jpg)
+![ExamPage](/.Screenshots/ExamPage.jpg)
 
-- 您可以查看下方的详细介绍
-- 使用Vue + TypeScript + JavaScript制作，使用Node.js+Electron完善系统级功能并打包。
-- 欢迎给作者点个右上角的Star或者给作者宣传一波
-- [【点我加群】DSZ考试看板QQ交流群: 901670561](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=TIGkmk-8lHUtUj_D4BVZ95tY-MMA1IwF&authKey=2TIKZ838Aq7vWGyiMKx9vwi%2B1MfHqpCv7NZ4XpTl4QhpAW03ac7x8Gc%2FnnOougVi&noverify=0&group_code=901670561)
+[![stars](https://img.shields.io/github/stars/MKStoler4096/dsz-exam-showboard-next?label=Stars)](https://github.com/MKStoler4096/dsz-exam-showboard-next/stargazers)
+[![forks](https://img.shields.io/github/forks/MKStoler4096/dsz-exam-showboard-next?label=Forks)](https://github.com/MKStoler4096/dsz-exam-showboard-next/forks)
+[![Watchers](https://img.shields.io/github/watchers/MKStoler4096/dsz-exam-showboard-next?style=social)](https://github.com/MKStoler4096/dsz-exam-showboard-next/watchers)
+[![Downloads](https://img.shields.io/github/downloads/MKStoler4096/dsz-exam-showboard-next/total?style=social&label=Downloads&logo=github)](https://github.com/MKStoler4096/dsz-exam-showboard-next/releases)
+[![GitHub Issues](https://img.shields.io/github/issues-search/MKStoler4096/dsz-exam-showboard-next?query=is%3Aopen&style=social-square&logo=github&label=Issues&color=%233fb950)](https://github.com/MKStoler4096/dsz-exam-showboard-next/issues)
+[![GitHub Discussions](https://img.shields.io/github/discussions/MKStoler4096/dsz-exam-showboard-next?style=flat&logo=Github&label=Discussions)](https://github.com/MKStoler4096/dsz-exam-showboard-next/discussions)
+[![Created At](https://img.shields.io/github/created-at/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
+[![Github Last Commit](https://img.shields.io/github/last-commit/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)
+[![GitHub Language Count](https://img.shields.io/github/languages/count/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
+[![GitHub Top Language](https://img.shields.io/github/languages/top/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
+[![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](LICENSE)
+[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+
+一款显示当前时间与考试详细信息的看板类软件
+
+| 下载 | [Releases](https://github.com/MKStoler4096/dsz-exam-showboard-next/releases) | [Actions](https://github.com/MKStoler4096/dsz-exam-showboard-next/actions) |
+| - | - | - |
+
+</div>
+
+> [!tip]
+> **本软件使用`Vue` + `TypeScript` + `JavaScript`制作，使用`Node.js` + `Electron`完善系统级功能并打包。**
 
 ## 功能
-
-### 展示考试信息
-
-- [x] 展示考试名称
-- [x] 展示当前时间
-- [x] 展示当前考试科目名称
-- [x] 展示考试开始，结束时间
-- [x] 展示考试状态
-
-### 其他功能
-
-- [x] 考试结束十五分钟前预警
-- [ ] 集控管理（正在开发中）
-
-## 软件截图
-
-### 主界面截图
-
-![main](image/README/main.png)
-
-### 考试界面截图
-
-![view](image/README/view.png)
+- 起始页展示`打开配置`、`直接进入看板`按钮
+- 看板页面
+	- 上方展示`考试标题`、`信息`
+	- 左侧展示`当前时间`、`当前科目`、`考试时间`、`考试状态`
+	- 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
+	- 考试结束前15分钟黄字提醒
 
 ## 开始使用
 
-### 下载
+- 下载安装程序并运行
 
-对于普通用户，可以在以下渠道下载到本软件
+默认安装在`AppData\Local\Programs\dsz-exam-showboard`
 
-下载 [Realeases](https://github.com/hello8693DSZ/dsz-exam-showboard/releases) | [Actions](https://github.com/hello8693DSZ/dsz-exam-showboard/actions)
+- 编写`json`配置文件
 
-### 准备配置文件
-
-#### 新建格式为`json`的配置文件，模板如下
-
+新建文件`exam_config.json`，模板如下
 ```json
 {
-  "examName": "",
-  "message": "",
-  "examInfos": [
-    {
-      "name": "",
-      "start": "XXXX-XX-XXTXX:XX:XX",
-      "end": "XXXX-XX-XXTXX:XX:XX"
-    }
-  ]
+    "examName": "考试名称",
+    "message": "信息",
+    "examInfos": [
+        {
+            "name": "科目",
+            "start": "2024-10-01T07:00:00",
+            "end": "2024-10-01T08:00:00"
+        },
+        {
+            "name": "科目",
+            "start": "2024-10-01T09:00:00",
+            "end": "2024-10-01T10:00:00"
+        }
+    ]
 }
 ```
 
-### 运行
+-  打开软件，进入起始页面，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮，将继续使用上次加载的配置。 
 
-下载完成后，将软件双击运行，等待进度条走完，双击运行桌面上的名为ExamShowboard的快捷方式
+## 遇到问题
 
-### 导入配置
+💡 如果您遇到`Bug`，或需要提出`优化`建议或新的`功能`，请提交[`Issues`](https://github.com/MKStoler4096/dsz-exam-showboard-next/issues)或在[`Discussions`](https://github.com/MKStoler4096/dsz-exam-showboard-next/discussions)中讨论。
 
-进入主界面后，点击打开配置按钮，选择您已配置好的配置文件，下次进入时可点击直接进入看板按钮进入考试看板，继续使用上次加载的配置文件。
+👥 您也可以加入[`QQ群｜901670561`](https://qm.qq.com/q/zDiEipHsaI)获取帮助或交流讨论。
+
+🛠️ 欢迎为本软件进行改进或编写新功能提交[`Pull Request`](https://github.com/MKStoler4096/dsz-exam-showboard-next/pulls)
 
 ## 开发
 
-### 环境要求
-
-要在本地编译应用您需要安装以下负载和工具
+### Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
-### 注意事项
-
-必须使用Yarn包管理。Node版本要求为20。
-
-### 开发进度
-
-- 正在`main`分支上维护`1.1.0`版本。
-- 正在`dev`分支上开发`1.1-Malkuth`版本。
+> [!Caution]
+> **必须使用Yarn包管理。Node版本要求为20。**
 
 ### Project Setup
 
-#### 安装
+#### Install
 
 ```bash
 $ yarn
@@ -103,7 +100,7 @@ $ yarn
 $ yarn dev
 ```
 
-#### 构建
+#### Build
 
 ```bash
 # For windows
@@ -116,14 +113,21 @@ $ yarn build:mac
 $ yarn build:linux
 ```
 
-### 说明
+### Progress
 
-如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。
+- 正在[`master`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)分支上维护`1.1.0`版本。
 
-我们欢迎想要为本应用实现新功能或进行改进的同学提交 [Pull Request](https://github.com/hello8693DSZ/dsz-exam-showboard/pulls)
+- 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.1-Malkuth`版本。
+
+> [!note]
+> **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
 
 ## Stars 历史
 
-[![Star 历史](https://starchart.cc/hello8693DSZ/dsz-exam-showboard.svg?variant=adaptive)](https://starchart.cc/hello8693DSZ/dsz-exam-showboard)
+[![Star 历史](https://starchart.cc/MKStoler4096/dsz-exam-showboard-next.svg?variant=adaptive)](https://starchart.cc/MKStoler4096/dsz-exam-showboard-next/stargazers)
 
 <div align="center">
+
+如果这个项目对您有帮助，请点亮 Star [⭐](#dsz-exam-showboard-next)
+
+</div>
