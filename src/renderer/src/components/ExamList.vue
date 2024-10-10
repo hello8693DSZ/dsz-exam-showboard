@@ -4,39 +4,43 @@
       <v-row justify="center">
         <v-col cols="12">
           <v-data-table
-            :items="sortedExams"
+            :items="groupedExams"
             :headers="headers"
             item-key="name"
             hide-default-footer
             dense
             class="text-h5"
           >
+            <template #item="{ item }">
+              <template v-if="item.isDate">
+                <tr>
+                  <td colspan="4" class="text-h5">{{ item.date }}</td>
+                </tr>
+              </template>
+              <template v-else>
+                <tr>
+                  <td class="text-h5">{{ item.name }}</td>
+                  <td class="text-h5">{{ formatTime(item.start) }}</td>
+                  <td class="text-h5">{{ formatTime(item.end) }}</td>
+                  <td>
+                    <v-chip :color="getStatusColor(item)" dark class="exam-status-chip">
+                      {{ getStatusText(item) }}
+                    </v-chip>
+                  </td>
+                </tr>
+              </template>
+            </template>
             <template #header.name>
-              <span class="text-h5">科目</span>
+              <span class="text-h5 font-weight-bold">科目</span>
             </template>
             <template #header.start>
-              <span class="text-h5">开始</span>
+              <span class="text-h5 font-weight-bold">开始</span>
             </template>
             <template #header.end>
-              <span class="text-h5">结束</span>
+              <span class="text-h5 font-weight-bold">结束</span>
             </template>
             <template #header.status>
-              <span class="text-h5">状态</span>
-            </template>
-
-            <template #item.name="{ item }">
-              <div class="text-h5">{{ item.name }}</div>
-            </template>
-            <template #item.start="{ item }">
-              <div class="text-h5">{{ formatTime(item.start) }}</div>
-            </template>
-            <template #item.end="{ item }">
-              <div class="text-h5">{{ formatTime(item.end) }}</div>
-            </template>
-            <template #item.status="{ item }">
-              <v-chip :color="getStatusColor(item)" dark class="exam-status-chip">
-                {{ getStatusText(item) }}
-              </v-chip>
+              <span class="text-h5 font-weight-bold">状态</span>
             </template>
           </v-data-table>
         </v-col>
@@ -62,6 +66,27 @@ const state = reactive({
 // Computed properties and methods
 const sortedExams = computed(() => {
   return state.exams.sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
+});
+
+const groupedExams = computed(() => {
+  const grouped = [];
+  let currentDate = '';
+
+  sortedExams.value.forEach((exam) => {
+    const examDate = new Date(exam.start).toLocaleDateString('zh-CN', {
+      month: 'numeric',
+      day: 'numeric'
+    });
+
+    if (examDate !== currentDate) {
+      currentDate = examDate;
+      grouped.push({ isDate: true, date: `${currentDate}日` });
+    }
+
+    grouped.push({ ...exam, isDate: false });
+  });
+
+  return grouped;
 });
 
 const headers = [
@@ -119,6 +144,10 @@ onMounted(() => {
 <style scoped>
 .text-h5 {
   font-size: 1.8rem !important;
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
 
 .exam-status-chip {
