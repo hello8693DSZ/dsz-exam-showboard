@@ -12,6 +12,7 @@
       </div>
       <div v-if="isWarning" class="text-h5 text--warning">考试即将结束</div>
       <div v-if="showRemainingTime" class="text-h5 text--info">剩余时间: {{ remainingTime }}</div>
+      <div v-if="showCountdown" class="text-h5 text--info">倒计时: {{ countdown }}</div>
     </v-card-text>
   </v-card>
 
@@ -75,9 +76,17 @@ const showRemainingTime = computed(() => {
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
+
+  return now.value >= start && now.value < end;
+});
+
+const showCountdown = computed(() => {
+  if (!props.exam) return false;
+
+  const start = new Date(props.exam.start);
   const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
 
-  return now.value >= fifteenMinutesBeforeStart && now.value < end;
+  return now.value >= fifteenMinutesBeforeStart && now.value < start;
 });
 
 const remainingTime = computed(() => {
@@ -85,6 +94,17 @@ const remainingTime = computed(() => {
 
   const end = new Date(props.exam.end);
   const timeDiff = end.getTime() - now.value.getTime();
+  const minutes = Math.floor(timeDiff / (1000 * 60));
+  const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+  return `${minutes}分${seconds}秒`;
+});
+
+const countdown = computed(() => {
+  if (!props.exam) return '';
+
+  const start = new Date(props.exam.start);
+  const timeDiff = start.getTime() - now.value.getTime();
   const minutes = Math.floor(timeDiff / (1000 * 60));
   const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 

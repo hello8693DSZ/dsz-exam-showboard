@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <AppTopBar />
-    <v-main>
+    <v-main class="no-scrollbar">
       <router-view />
     </v-main>
   </v-app>
@@ -10,3 +10,9 @@
 <script lang="ts" setup>
 //
 </script>
+
+<style scoped>
+.no-scrollbar {
+  overflow: hidden;
+}
+</style>

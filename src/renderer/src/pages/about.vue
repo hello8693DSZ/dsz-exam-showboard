@@ -9,7 +9,7 @@
               欢迎来到考试展板应用程序。这是一个用于展示考试信息的工具，帮助考生更好地了解考试安排和状态。
             </p>
             <p>本应用程序旨在为考生提供便捷的考试信息查看体验。</p>
-            <p>版本号： 1.1.0-Malkuth</p>
+            <p>版本号： 1.1.1-Malkuth</p>
             <p>开发者：Hello8963 & Mkstoler4096</p>
             <v-btn
               href="https://github.com/MKStoler4096/dsz-exam-showboard-next"
