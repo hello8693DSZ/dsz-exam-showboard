@@ -5,8 +5,8 @@
 # dsz-exam-showboard-next
 # DSZ考试看板 next（原DSZ考试看板）
 
-![WelcomePage](/.Screenshots/WelcomePage.png)
-![ExamPage](/.Screenshots/ExamPage.png)
+![WelcomePage](/.Screenshots/WelcomePage.jpg)
+![ExamPage](/.Screenshots/ExamPage.jpg)
 
 [![stars](https://img.shields.io/github/stars/MKStoler4096/dsz-exam-showboard-next?label=Stars)](https://github.com/MKStoler4096/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/MKStoler4096/dsz-exam-showboard-next?label=Forks)](https://github.com/MKStoler4096/dsz-exam-showboard-next/forks)
