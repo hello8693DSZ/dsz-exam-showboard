@@ -25,4 +25,16 @@ app.use(VueShowdownPlugin, {
 
 registerPlugins(app);
 
+// 添加全局样式来隐藏滚动条
+const style = document.createElement('style');
+style.innerHTML = `
+  body {
+    overflow: hidden;
+  }
+  .no-scrollbar {
+    overflow: hidden;
+  }
+`;
+document.head.appendChild(style);
+
 app.mount('#app');
