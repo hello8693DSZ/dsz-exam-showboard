@@ -1,12 +1,9 @@
-<div align="center">
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="ExamShowboard logo" src="resources/icon.png">
 
-<image src="resources/icon.png" height="64"/>
+# 考试看板Next（原DSZ考试看板）
+# DSZ-Exam-Showboard-Next
 
-# dsz-exam-showboard-next
-# DSZ考试看板 next（原DSZ考试看板）
-
-![WelcomePage](/.Screenshots/WelcomePage.jpg)
-![ExamPage](/.Screenshots/ExamPage.jpg)
+<div align=center>
 
 [![stars](https://img.shields.io/github/stars/MKStoler4096/dsz-exam-showboard-next?label=Stars)](https://github.com/MKStoler4096/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/MKStoler4096/dsz-exam-showboard-next?label=Forks)](https://github.com/MKStoler4096/dsz-exam-showboard-next/forks)
@@ -20,6 +17,9 @@
 [![GitHub Top Language](https://img.shields.io/github/languages/top/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+
+![WelcomePage](/.Screenshots/WelcomePage.jpg)
+![ExamPage](/.Screenshots/ExamPage.jpg)
 
 一款显示当前时间与考试详细信息的看板类软件
 
@@ -115,9 +115,9 @@ $ yarn build:linux
 
 ### Progress
 
-- 正在[`master`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)分支上维护`1.1.0`版本。
+- 正在[`master`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)分支上维护`1.1.3`版本。
 
-- 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.1-Malkuth`版本。
+- 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.2-Yesod`版本。
 
 > [!note]
 > **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
