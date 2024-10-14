@@ -1,6 +1,7 @@
 <img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="ExamShowboard logo" src="resources/icon.png">
 
 # 考试看板Next（原DSZ考试看板）
+
 # DSZ-Exam-Showboard-Next
 
 <div align=center>
@@ -15,7 +16,7 @@
 [![Github Last Commit](https://img.shields.io/github/last-commit/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/MKStoler4096/dsz-exam-showboard-next)](https://github.com/MKStoler4096/dsz-exam-showboard-next)
-[![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](LICENSE)
+[![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
 
 ![WelcomePage](/.Screenshots/WelcomePage.jpg)
@@ -24,20 +25,20 @@
 一款显示当前时间与考试详细信息的看板类软件
 
 | 下载 | [Releases](https://github.com/MKStoler4096/dsz-exam-showboard-next/releases) | [Actions](https://github.com/MKStoler4096/dsz-exam-showboard-next/actions) |
-| - | - | - |
+| ---- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 
 </div>
 
-> [!tip]
-> **本软件使用`Vue` + `TypeScript` + `JavaScript`制作，使用`Node.js` + `Electron`完善系统级功能并打包。**
+> [!tip] > **本软件使用`Vue` + `TypeScript` + `JavaScript`制作，使用`Node.js` + `Electron`完善系统级功能并打包。**
 
 ## 功能
+
 - 起始页展示`打开配置`、`直接进入看板`按钮
 - 看板页面
-	- 上方展示`考试标题`、`信息`
-	- 左侧展示`当前时间`、`当前科目`、`考试时间`、`考试状态`
-	- 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
-	- 考试结束前15分钟黄字提醒
+  - 上方展示`考试标题`、`信息`
+  - 左侧展示`当前时间`、`当前科目`、`考试时间`、`考试状态`
+  - 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
+  - 考试结束前15分钟黄字提醒
 
 ## 开始使用
 
@@ -48,26 +49,27 @@
 - 编写`json`配置文件
 
 新建文件`exam_config.json`，模板如下
+
 ```json
 {
-    "examName": "考试名称",
-    "message": "信息",
-    "examInfos": [
-        {
-            "name": "科目",
-            "start": "2024-10-01T07:00:00",
-            "end": "2024-10-01T08:00:00"
-        },
-        {
-            "name": "科目",
-            "start": "2024-10-01T09:00:00",
-            "end": "2024-10-01T10:00:00"
-        }
-    ]
+  "examName": "考试名称",
+  "message": "信息",
+  "examInfos": [
+    {
+      "name": "科目",
+      "start": "2024-10-01T07:00:00",
+      "end": "2024-10-01T08:00:00"
+    },
+    {
+      "name": "科目",
+      "start": "2024-10-01T09:00:00",
+      "end": "2024-10-01T10:00:00"
+    }
+  ]
 }
 ```
 
--  打开软件，进入起始页面，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮，将继续使用上次加载的配置。 
+- 打开软件，进入起始页面，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮，将继续使用上次加载的配置。
 
 ## 遇到问题
 
@@ -83,8 +85,7 @@
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
-> [!Caution]
-> **必须使用Yarn包管理。Node版本要求为20。**
+> [!Caution] > **必须使用Yarn包管理。Node版本要求为20。**
 
 ### Project Setup
 
@@ -119,8 +120,7 @@ $ yarn build:linux
 
 - 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.2-Yesod`版本。
 
-> [!note]
-> **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
+> [!note] > **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
 
 ## Stars 历史
 
