@@ -11,24 +11,23 @@
             dense
             class="text-h5"
           >
-            <template #item="{ item }">
-              <template v-if="item.isDate">
-                <tr>
-                  <td colspan="4" class="text-h5">{{ item.date }}</td>
-                </tr>
-              </template>
-              <template v-else>
-                <tr>
-                  <td class="text-h5">{{ item.name }}</td>
-                  <td class="text-h5">{{ formatTime(item.start) }}</td>
-                  <td class="text-h5">{{ formatTime(item.end) }}</td>
-                  <td>
-                    <v-chip :color="getStatusColor(item)" dark class="exam-status-chip">
-                      {{ getStatusText(item) }}
-                    </v-chip>
-                  </td>
-                </tr>
-              </template>
+            <template #item="{ item, index }">
+              <tr :style="{ lineHeight: '2.5rem' }">
+                <td v-if="item.showDate" class="text-h5 date-column" :rowspan="item.rowspan">
+                  {{ item.date }}<br>{{ item.period }}
+                </td>
+                <td class="text-h5 subject-column">{{ item.name }}</td>
+                <td class="text-h5 time-column">{{ formatTime(item.start) }}</td>
+                <td class="text-h5 time-column">{{ formatTime(item.end) }}</td>
+                <td class="status-column">
+                  <v-chip :color="getStatusColor(item)" dark class="exam-status-chip">
+                    {{ getStatusText(item) }}
+                  </v-chip>
+                </td>
+              </tr>
+            </template>
+            <template #header.date>
+              <span class="text-h5 font-weight-bold">日期</span>
             </template>
             <template #header.name>
               <span class="text-h5 font-weight-bold">科目</span>
@@ -63,42 +62,55 @@ const state = reactive({
   exams: props.exam
 });
 
-// Computed properties and methods
-const sortedExams = computed(() => {
-  return state.exams.sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
-});
+function formatPeriod(isoString: string): string {
+  const hour = new Date(isoString).getHours();
+  if (hour < 12) return '上午';
+  else if (hour < 18) return '下午';
+  else return '晚上';
+}
 
 const groupedExams = computed(() => {
   const grouped = [];
   let currentDate = '';
+  let currentPeriod = '';
 
-  sortedExams.value.forEach((exam) => {
+  sortedExams.value.forEach((exam, index) => {
     const examDate = new Date(exam.start).toLocaleDateString('zh-CN', {
       month: 'numeric',
       day: 'numeric'
-    });
+    }).replace('/', '月') + '日';
+    const period = formatPeriod(exam.start);
 
-    if (examDate !== currentDate) {
+    const showDate = examDate !== currentDate || period !== currentPeriod;
+
+    if (showDate) {
       currentDate = examDate;
-      grouped.push({ isDate: true, date: `${currentDate}日` });
-    }
+      currentPeriod = period;
 
-    grouped.push({ ...exam, isDate: false });
+      const rowspan = sortedExams.value.filter(e => 
+        new Date(e.start).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }).replace('/', '月') + '日' === currentDate &&
+        formatPeriod(e.start) === currentPeriod
+      ).length;
+
+      grouped.push({ ...exam, date: examDate, period, showDate, rowspan });
+    } else {
+      grouped.push({ ...exam, date: examDate, period, showDate: false });
+    }
   });
 
   return grouped;
 });
 
 const headers = [
-  { text: '科目', value: 'name' },
-  { text: '开始', value: 'start', sortable: false },
-  { text: '结束', value: 'end', sortable: false },
-  { text: '状态', value: 'status', sortable: false }
+  { text: '日期', value: 'date', sortable: false, align: 'center' },
+  { text: '科目', value: 'name', align: 'center' },
+  { text: '开始', value: 'start', sortable: false, align: 'center' },
+  { text: '结束', value: 'end', sortable: false, align: 'center' },
+  { text: '状态', value: 'status', sortable: false, align: 'center' }
 ];
 
 const formatTime = (isoString: string) => {
   const date = new Date(isoString);
-  date.setSeconds(date.getSeconds() + 1); // 加1秒
   return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
 };
 
@@ -126,14 +138,17 @@ function getStatusText(item: any): string {
   }
 }
 
-// Update exams every minute
+const sortedExams = computed(() => {
+  return state.exams.sort((a, b) => new Date(a.start).getTime() - new Date(b.start).getTime());
+});
+
 onMounted(() => {
   const interval = setInterval(() => {
     state.exams = state.exams.map((exam) => ({
       ...exam,
       status: getStatusText(exam)
     }));
-  }, 1000); // 1000 ms = 1 second
+  }, 1000);
 
   onUnmounted(() => {
     clearInterval(interval);
@@ -144,6 +159,7 @@ onMounted(() => {
 <style scoped>
 .text-h5 {
   font-size: 1.8rem !important;
+  text-align: center;
 }
 
 .font-weight-bold {
@@ -152,5 +168,39 @@ onMounted(() => {
 
 .exam-status-chip {
   font-size: 1.5rem !important;
+  text-align: center;
+}
+
+.v-card {
+  overflow-x: auto;
+  max-width: 100%; /* 防止表格超出边界 */
+  padding-right: 8px; /* 调整右边距 */
+}
+
+/* 列样式 */
+.date-column,
+.subject-column,
+.time-column,
+.status-column {
+  white-space: nowrap;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.date-column {
+  width: 100px;
+}
+
+.subject-column {
+  width: 140px;
+}
+
+.time-column {
+  width: 80px;
+}
+
+.status-column {
+  width: 90px;
 }
 </style>
