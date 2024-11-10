@@ -1,7 +1,7 @@
 name: 功能请求
 description: 提出一项新的功能。
 title: （在这里输入你的标题）
-labels: ['新功能','未阅读']
+labels: ['新功能', '未阅读']
 body:
   - type: markdown
     attributes:

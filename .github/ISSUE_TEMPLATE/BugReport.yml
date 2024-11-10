@@ -1,7 +1,7 @@
 name: Bug 反馈
 description: 在使用考试看板 Next 的过程中遇到了 Bug。
 title: （在这里输入你的标题）
-labels: ['Bug','未阅读']
+labels: ['Bug', '未阅读']
 body:
   - type: markdown
     attributes:

@@ -14,16 +14,11 @@
             <template #item="{ item, index }">
               <tr :style="{ lineHeight: '2.5rem' }">
                 <td v-if="item.showDate" class="text-h5 date-column" :rowspan="item.rowspan">
-                  {{ item.date }}<br>{{ item.period }}
+                  {{ item.date }}<br />{{ item.period }}
                 </td>
-                <td class="text-h5 subject-column">{{ item.name }}</td>
+                <td :class="['text-h5', 'subject-column', getStatusClass(item)]">{{ item.name }}</td>
                 <td class="text-h5 time-column">{{ formatTime(item.start) }}</td>
                 <td class="text-h5 time-column">{{ formatTime(item.end) }}</td>
-                <td class="status-column">
-                  <v-chip :color="getStatusColor(item)" dark class="exam-status-chip">
-                    {{ getStatusText(item) }}
-                  </v-chip>
-                </td>
               </tr>
             </template>
             <template #header.date>
@@ -37,9 +32,6 @@
             </template>
             <template #header.end>
               <span class="text-h5 font-weight-bold">结束</span>
-            </template>
-            <template #header.status>
-              <span class="text-h5 font-weight-bold">状态</span>
             </template>
           </v-data-table>
         </v-col>
@@ -75,10 +67,13 @@ const groupedExams = computed(() => {
   let currentPeriod = '';
 
   sortedExams.value.forEach((exam, index) => {
-    const examDate = new Date(exam.start).toLocaleDateString('zh-CN', {
-      month: 'numeric',
-      day: 'numeric'
-    }).replace('/', '月') + '日';
+    const examDate =
+      new Date(exam.start)
+        .toLocaleDateString('zh-CN', {
+          month: 'numeric',
+          day: 'numeric'
+        })
+        .replace('/', '月') + '日';
     const period = formatPeriod(exam.start);
 
     const showDate = examDate !== currentDate || period !== currentPeriod;
@@ -87,9 +82,13 @@ const groupedExams = computed(() => {
       currentDate = examDate;
       currentPeriod = period;
 
-      const rowspan = sortedExams.value.filter(e => 
-        new Date(e.start).toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' }).replace('/', '月') + '日' === currentDate &&
-        formatPeriod(e.start) === currentPeriod
+      const rowspan = sortedExams.value.filter(
+        (e) =>
+          new Date(e.start)
+            .toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' })
+            .replace('/', '月') +
+            '日' ===
+            currentDate && formatPeriod(e.start) === currentPeriod
       ).length;
 
       grouped.push({ ...exam, date: examDate, period, showDate, rowspan });
@@ -105,8 +104,7 @@ const headers = [
   { text: '日期', value: 'date', sortable: false, align: 'center' },
   { text: '科目', value: 'name', align: 'center' },
   { text: '开始', value: 'start', sortable: false, align: 'center' },
-  { text: '结束', value: 'end', sortable: false, align: 'center' },
-  { text: '状态', value: 'status', sortable: false, align: 'center' }
+  { text: '结束', value: 'end', sortable: false, align: 'center' }
 ];
 
 const formatTime = (isoString: string) => {
@@ -114,28 +112,14 @@ const formatTime = (isoString: string) => {
   return `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}`;
 };
 
-function getStatusColor(item: any): string {
+function getStatusClass(item: any): string {
   const now = new Date();
   const startTime = new Date(item.start);
   const endTime = new Date(item.end);
 
-  if (now < startTime) return 'orange';
-  else if (now >= startTime && now <= endTime) return 'green';
-  else return 'red';
-}
-
-function getStatusText(item: any): string {
-  const now = new Date();
-  const startTime = new Date(item.start);
-  const endTime = new Date(item.end);
-
-  if (now < startTime) {
-    return '未开始';
-  } else if (now >= startTime && now <= endTime) {
-    return '进行中';
-  } else {
-    return '已结束';
-  }
+  if (now < startTime) return 'status-upcoming';
+  else if (now >= startTime && now <= endTime) return 'status-ongoing';
+  else return 'status-ended';
 }
 
 const sortedExams = computed(() => {
@@ -146,7 +130,7 @@ onMounted(() => {
   const interval = setInterval(() => {
     state.exams = state.exams.map((exam) => ({
       ...exam,
-      status: getStatusText(exam)
+      status: getStatusClass(exam)
     }));
   }, 1000);
 
@@ -166,11 +150,6 @@ onMounted(() => {
   font-weight: bold;
 }
 
-.exam-status-chip {
-  font-size: 1.5rem !important;
-  text-align: center;
-}
-
 .v-card {
   overflow-x: auto;
   max-width: 100%; /* 防止表格超出边界 */
@@ -180,8 +159,7 @@ onMounted(() => {
 /* 列样式 */
 .date-column,
 .subject-column,
-.time-column,
-.status-column {
+.time-column {
   white-space: nowrap;
   text-align: center;
   padding-left: 4px;
@@ -200,7 +178,16 @@ onMounted(() => {
   width: 80px;
 }
 
-.status-column {
-  width: 90px;
+/* 状态样式 */
+.status-upcoming {
+  color: orange;
+}
+
+.status-ongoing {
+  color: green;
+}
+
+.status-ended {
+  color: red;
 }
 </style>
