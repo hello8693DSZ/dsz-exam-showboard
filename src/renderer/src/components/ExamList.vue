@@ -184,7 +184,7 @@ onMounted(() => {
 }
 
 .status-ongoing {
-  color: green;
+  color: #00ff00;
 }
 
 .status-ended {

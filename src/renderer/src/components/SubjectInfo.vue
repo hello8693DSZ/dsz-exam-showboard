@@ -137,7 +137,7 @@ updateNow();
 }
 
 .status-middle {
-  color: green;
+  color: #00ff00;
 }
 
 .status-after {
