@@ -16,7 +16,9 @@
                 <td v-if="item.showDate" class="text-h5 date-column" :rowspan="item.rowspan">
                   {{ item.date }}<br />{{ item.period }}
                 </td>
-                <td :class="['text-h5', 'subject-column', getStatusClass(item)]">{{ item.name }}</td>
+                <td :class="['text-h5', 'subject-column', getStatusClass(item)]">
+                  {{ item.name }}
+                </td>
                 <td class="text-h5 time-column">{{ formatTime(item.start) }}</td>
                 <td class="text-h5 time-column">{{ formatTime(item.end) }}</td>
               </tr>

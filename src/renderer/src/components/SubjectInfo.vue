@@ -45,8 +45,10 @@ const statusColor = computed(() => {
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
+  const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
 
-  if (now.value < start) return 'status-before';
+  if (now.value < fifteenMinutesBeforeStart) return 'status-before';
+  if (now.value >= fifteenMinutesBeforeStart && now.value < start) return 'status-soon';
   if (now.value >= start && now.value < end) return 'status-middle';
   if (now.value >= end) return 'status-after';
 });
@@ -56,8 +58,10 @@ const statusText = computed(() => {
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
+  const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
 
-  if (now.value < start) return '未开始';
+  if (now.value < fifteenMinutesBeforeStart) return '未开始';
+  if (now.value >= fifteenMinutesBeforeStart && now.value < start) return '即将开始';
   if (now.value >= start && now.value < end) return '进行中';
   if (now.value >= end) return '已结束';
 });
@@ -134,6 +138,10 @@ updateNow();
 
 .status-before {
   color: orange;
+}
+
+.status-soon {
+  color: #ff9800; /* 即将开始的颜色 */
 }
 
 .status-middle {
