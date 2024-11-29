@@ -1,30 +1,24 @@
 <template>
   <v-container class="main-container" fill-height>
     <v-row justify="center" align="center">
-      <v-col cols="12" md="4">
+      <v-col cols="12" md="4" class="d-flex flex-column">
         <v-card class="pa-4 fade-in slide-in" outlined>
           <v-text-field v-model="remoteUrl" label="请求地址" clearable></v-text-field>
           <v-btn block color="deep-purple accent-4" dark @click="saveUrl">保存地址</v-btn>
           <p class="mt-2 text-center">输入并保存请求地址</p>
-        </v-card>
-      </v-col>
-      <v-col cols="12" md="4">
-        <v-card class="pa-4 fade-in slide-in" outlined>
-          <v-btn block color="teal accent-4" dark @click="fetchConfig">请求配置</v-btn>
-          <p class="mt-2 text-center">请求并加载配置</p>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row justify="center" align="center" class="mt-4">
-      <v-col cols="12" md="4">
-        <v-card class="pa-4 fade-in slide-in" outlined>
-          <v-btn block color="deep-purple accent-4" dark @click="openDialog">打开配置</v-btn>
+          <v-btn block color="deep-purple accent-4" dark class="mt-2" @click="openDialog"
+            >打开配置</v-btn
+          >
           <p class="mt-2 text-center">打开 JSON 配置文件</p>
         </v-card>
       </v-col>
-      <v-col cols="12" md="4">
+      <v-col cols="12" md="4" class="d-flex flex-column">
         <v-card class="pa-4 fade-in slide-in" outlined>
-          <v-btn block color="teal accent-4" dark @click="gotoInfoPage">直接进入看板</v-btn>
+          <v-btn block color="teal accent-4" dark @click="fetchConfig">请求配置</v-btn>
+          <p class="mt-2 text-center">请求并加载配置</p>
+          <v-btn block color="teal accent-4" dark class="mt-2" @click="gotoInfoPage"
+            >直接进入看板</v-btn
+          >
           <p class="mt-2 text-center">直接进入看板，将继续使用上次加载的配置</p>
         </v-card>
       </v-col>
