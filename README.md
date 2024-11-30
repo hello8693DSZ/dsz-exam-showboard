@@ -71,11 +71,12 @@
 }
 ```
 
-- 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件，下次可点击 `直接进入看板` 按钮，将继续使用上次加载的配置。
-- 集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
+- 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
+- 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
   - 新建 GitHub 公开存储仓库
   - 上传上面提到的 `exam_config.json` 文件
-  - 复制 `raw` 直链粘贴到应用文本框并保存
+  - 复制 `raw` 直链粘贴到应用`请求地址`文本框并保存
+- 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
 
 ## 遇到问题
 
