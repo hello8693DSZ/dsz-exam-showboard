@@ -39,6 +39,7 @@
   - 左侧展示`当前时间`、`当前科目`、`考试时间`、`考试状态`
   - 右侧展示考试科目列表，包括`科目`、`开始`、`结束`、`状态`
   - 考试结束前15分钟黄字提醒
+  - 集控功能（早期测试）
 
 ## 开始使用
 
@@ -71,6 +72,10 @@
 
 - 打开软件，进入起始页面，点击`打开配置`按钮，选择配置文件，下次可点击`直接进入看板`按钮，将继续使用上次加载的配置。
 
+- 集控
+
+仿照 `ClassIsland` 的集控方法，把上面提到的 `exam_config.json` 传上去，获得 `raw` 直链粘贴回文本框并保存即可。
+
 ## 遇到问题
 
 💡 如果您遇到`Bug`，或需要提出`优化`建议或新的`功能`，请提交[`Issues`](https://github.com/MKStoler4096/dsz-exam-showboard-next/issues)或在[`Discussions`](https://github.com/MKStoler4096/dsz-exam-showboard-next/discussions)中讨论。
@@ -81,26 +86,32 @@
 
 ## 开发
 
-### Recommended IDE Setup
+### 推荐开发环境
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
   > [!Caution] > **必须使用Yarn包管理。Node版本要求为20。**
 
-### Project Setup
+### 工程构建
 
-#### Install
+#### 配置
 
 ```bash
 $ yarn
 ```
 
-#### Development
+#### 开发
 
 ```bash
 $ yarn dev
+# 如果无法显示，可以尝试使用下面的命令（不支持热重载）：
+$ yarn start
 ```
 
-#### Build
+> [!note]
+>
+> **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
+
+#### 生成
 
 ```bash
 # For windows
@@ -113,13 +124,11 @@ $ yarn build:mac
 $ yarn build:linux
 ```
 
-### Progress
+### 开发进度
 
 - 正在[`master`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)分支上维护`1.2-Yesod`版本。
 
-- 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.3-Zob`版本。
-
-> [!note] > **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
+- 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.3-HOD`版本。
 
 ## Stars 历史
 
