@@ -130,6 +130,9 @@ $ yarn build:linux
 
 - 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.3-HOD`版本。
 
+> [!note]
+> **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
+
 ## Stars 历史
 
 [![Star 历史](https://starchart.cc/MKStoler4096/dsz-exam-showboard-next.svg?variant=adaptive)](https://starchart.cc/MKStoler4096/dsz-exam-showboard-next/stargazers)
