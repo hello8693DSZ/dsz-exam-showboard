@@ -25,7 +25,7 @@
 一款显示当前时间与考试详细信息的看板类软件
 
 | 下载 | [Releases](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/actions) |
-| ---- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| - | - | - |
 
 </div>
 
