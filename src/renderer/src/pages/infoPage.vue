@@ -1,11 +1,11 @@
 <template>
   <v-container class="main-area">
     <v-row>
-      <v-col cols="12" class="d-flex justify-space-between align-center mb-4">
+      <v-col cols="12" class="d-flex justify-space-between align-center">
         <h1 class="large-title">{{ globalStore.examName }}</h1>
         <h2 class="room">{{ globalStore.room }}</h2>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" v-if="globalStore.message">
         <h3 class="medium-title text-left">{{ globalStore.message }}</h3>
       </v-col>
     </v-row>
@@ -69,8 +69,8 @@ onUnmounted(() => {
 
 <style scoped>
 .main-area {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .large-title {
@@ -88,7 +88,4 @@ onUnmounted(() => {
   text-align: right;
 }
 
-.mb-4 {
-  margin-bottom: 20px;
-}
 </style>
