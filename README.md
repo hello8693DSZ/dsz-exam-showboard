@@ -64,7 +64,8 @@
       "end": "2024-12-01T08:00:00"
     },
     {
-      "name": "科目/科目", /* 如果有两个科目可以自动转换为双行显示 */
+      "name": "科目/科目",
+      "//name": "如果有两个科目可以自动转化为双行显示",
       "start": "2024-12-01T09:00:00",
       "end": "2024-12-01T10:00:00"
     }
@@ -76,7 +77,16 @@
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
   - 新建 GitHub 公开存储仓库
   - 上传上面提到的 `exam_config.json` 文件
-  - 复制 `raw` 直链粘贴到应用`请求地址`文本框并保存
+  - 复制 `Raw` 直链粘贴到应用`请求地址`文本框并保存
+
+>[!tip]
+>
+>可以在 `Raw 文件` 前加上镜像源，如
+>
+>```
+>https://raw.githubusercontent.com/Jursin/Exam-showboard-mgmt-cfg/refs/heads/main/exam_config.json
+>```
+
 - 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
 
 ## 遇到问题
