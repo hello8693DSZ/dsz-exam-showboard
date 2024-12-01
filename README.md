@@ -4,8 +4,8 @@
 
 # ExamShowboard-Next（下一代考试看板）
 
-![HomePage](/.Screenshots/HomePage.jpg)
-![InfoPage](/.Screenshots/InfoPage.jpg)
+![HomePage](/.Screenshots/HomePage.png)
+![InfoPage](/.Screenshots/InfoPage.png)
 
 [![stars](https://img.shields.io/github/stars/ProjectCampus-CH/dsz-exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/ProjectCampus-CH/dsz-exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/forks)
