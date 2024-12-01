@@ -10,7 +10,28 @@
             </p>
             <p class="text-lg">本软件旨在为考生提供便捷的考试信息查看体验。</p>          
             <p>版本号：1.2.0 正式版</p>
-            <p class="text-lg">开发者：Hello8963 & Mkstoler4096</p>
+            <p class="text-lg">
+              开发者：
+              <v-btn
+                href="https://github.com/hello8693DSZ"
+                target="_blank"
+                text
+                color="primary"
+                class="developer-link"
+              >
+                Hello8963
+              </v-btn>
+              &
+              <v-btn
+                href="https://github.com/MKStoler4096"
+                target="_blank"
+                text
+                color="primary"
+                class="developer-link"
+              >
+                Mkstoler4096
+              </v-btn>
+            </p>
             <v-btn
               href="https://github.com/ProjectCampus-CH/dsz-exam-showboard-next"
               target="_blank"
@@ -44,7 +65,6 @@
   transform: scale(1.05);
 }
 
-/* 调整字体大小 */
 .text-h3 {
   font-size: 2.5em !important;
 }
@@ -56,6 +76,12 @@
 .v-btn {
   height: 48px;
   font-size: 1.1em;
+}
+
+.developer-link {
+  font-size: 1em;
+  text-transform: none;
+  margin-left: 5px;
 }
 
 .normal-case {
