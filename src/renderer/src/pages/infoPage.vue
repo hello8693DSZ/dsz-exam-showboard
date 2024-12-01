@@ -1,9 +1,10 @@
 <template>
   <v-container class="main-area">
     <v-row>
-      <v-col cols="12" class="d-flex justify-space-between align-center mb-4">
+      <v-col cols="12" class="d-flex flex-column mb-4">
         <h1 class="large-title">{{ globalStore.examName }}</h1>
-        <h2 class="medium-title">{{ globalStore.message }}</h2>
+        <h2 class="medium-title text-left">{{ globalStore.room }}</h2>
+        <h3 class="small-title text-left">{{ globalStore.message }}</h3>
       </v-col>
     </v-row>
 
@@ -75,7 +76,15 @@ onUnmounted(() => {
 }
 
 .medium-title {
-  font-size: 3em;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.small-title {
+  font-size: 1.5em;
+  margin-top: 5px;
+  color: gray;
+  text-align: left;
 }
 
 .mb-4 {
