@@ -1,12 +1,14 @@
 <template>
   <v-container class="main-area">
     <v-row>
-      <v-col cols="12" class="d-flex justify-space-between align-center mb-4">
-        <h1 class="large-title">{{ globalStore.examName }}</h1>
-        <h2 class="medium-title">{{ globalStore.room }}</h2>
-      </v-col>
-      <v-col cols="12">
-        <h3 class="small-title text-left">{{ globalStore.message }}</h3>
+      <v-col cols="12" class="d-flex justify-space-between align-center">
+        <div>
+          <h1 class="large-title">{{ globalStore.examName }}</h1>
+          <h2 class="medium-title">{{ globalStore.message }}</h2>
+        </div>
+        <div class="room ml-auto">
+          <h2 class="medium-title">{{ globalStore.room }}</h2>
+        </div>
       </v-col>
     </v-row>
 
@@ -46,7 +48,7 @@ const scheduleNextUpdate = () => {
   if (nextExam) {
     const nextEndTime = new Date(nextExam.end).getTime();
     const now = Date.now();
-    const delay = nextEndTime - now + 60000;
+    const delay = nextEndTime - now + 60000; // 下一次考试结束时间 + 1分钟
 
     timeout = setTimeout(() => {
       updateCurrentExam();
@@ -69,8 +71,8 @@ onUnmounted(() => {
 
 <style scoped>
 .main-area {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .large-title {
@@ -78,20 +80,15 @@ onUnmounted(() => {
 }
 
 .medium-title {
-  font-size: 3em;
-  margin-top: 5px;
-  text-align: right;
-}
-
-.small-title {
-  font-size: 2.0em;
-  margin-top: 2px;
+  font-size: 2em;
   color: gray;
-  text-align: left;
-  line-height: 1.2;
 }
 
-.mb-4 {
-  margin-bottom: 20px;
+.room {
+  font-size: 3em;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 </style>
