@@ -8,29 +8,9 @@
             <p class="text-lg">
               欢迎使用考试看板，这是一款用于展示考试信息的工具，帮助考生更好地了解考试信息与状态。
             </p>
-            <p class="text-lg">本软件旨在为考生提供便捷的考试信息查看体验。</p>          
-            <p>版本号：1.2.0 正式版</p>
-            <p class="text-lg">
-              开发者：
-              <v-btn
-                href="https://github.com/hello8693DSZ"
-                target="_blank"
-                text
-                color="primary"
-                class="developer-link"
-              >
-                Hello8963
-              </v-btn>
-              &
-              <v-btn
-                href="https://github.com/MKStoler4096"
-                target="_blank"
-                text
-                color="primary"
-                class="developer-link"
-              >
-                Mkstoler4096
-              </v-btn>
+            <p class="text-lg">本软件旨在为考生提供便捷的考试信息查看体验。</p>
+            <p class="text-lg developer">
+              开发者：<span class="developer-name">Hello8963</span> & <span class="developer-name">Mkstoler4096</span>
             </p>
             <v-btn
               href="https://github.com/ProjectCampus-CH/dsz-exam-showboard-next"
@@ -78,13 +58,18 @@
   font-size: 1.1em;
 }
 
-.developer-link {
-  font-size: 1em;
-  text-transform: none;
-  margin-left: 5px;
-}
-
 .normal-case {
   text-transform: none !important;
+}
+
+/* 开发者名字背景框 */
+.developer-name {
+  background-color: #f0f0f0;
+  padding: 0 8px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  margin: 0 5px;
 }
 </style>
