@@ -1,23 +1,25 @@
 <template>
   <v-card v-if="exam" class="mx-auto pa-4 subject-info-card" max-width="600" elevation="12">
     <v-card-text>
-      <div class="text-h5">
+      <div class="text-h5 line-item">
         当前科目:<span class="text-h5 ml-2">{{ exam.name }}</span>
       </div>
-      <div class="text-h5">
-        考试时间: {{ formatDateTime(exam.start) }} ~ {{ formatDateTime(exam.end) }}
+      <div class="text-h5 line-item">
+        考试时间: {{ formatDateTime(exam.start) }} - {{ formatDateTime(exam.end) }}
       </div>
-      <div class="text-h5 mt-4">
+      <div class="text-h5 line-item">
         考试状态: <span :class="statusColor">{{ statusText }}</span>
       </div>
-      <div v-if="isWarning" class="text-h5 text--warning">考试即将结束</div>
-      <div v-if="showRemainingTime" class="text-h5 text--info">剩余时间: {{ remainingTime }}</div>
-      <div v-if="showCountdown" class="text-h5 text--info">倒计时: {{ countdown }}</div>
+      <div v-if="showCountdown" class="text-h5 text--info line-item">开考倒计时: {{ countdown }}</div>
+      <div v-if="isWarning" class="text-h5 text--warning line-item">考试即将结束</div>
+      <div v-if="showRemainingTime" :class="['text-h5', remainingTimeColorClass, 'line-item']">
+        考试剩余时间: {{ remainingTime }}
+      </div>
     </v-card-text>
   </v-card>
 
   <v-card v-else class="mx-auto pa-4 subject-info-card" max-width="600" elevation="12">
-    <v-card-title class="headline grey lighten-2"> 考试已结束 </v-card-title>
+    <v-card-title class="headline grey lighten-2 text-center text--ended">考试已结束</v-card-title>
   </v-card>
 </template>
 
@@ -45,10 +47,8 @@ const statusColor = computed(() => {
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
-  const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
 
-  if (now.value < fifteenMinutesBeforeStart) return 'status-before';
-  if (now.value >= fifteenMinutesBeforeStart && now.value < start) return 'status-soon';
+  if (now.value < start) return 'status-before';
   if (now.value >= start && now.value < end) return 'status-middle';
   if (now.value >= end) return 'status-after';
 });
@@ -58,10 +58,8 @@ const statusText = computed(() => {
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
-  const fifteenMinutesBeforeStart = new Date(start.getTime() - 15 * 60 * 1000);
 
-  if (now.value < fifteenMinutesBeforeStart) return '未开始';
-  if (now.value >= fifteenMinutesBeforeStart && now.value < start) return '即将开始';
+  if (now.value < start) return '未开始';
   if (now.value >= start && now.value < end) return '进行中';
   if (now.value >= end) return '已结束';
 });
@@ -115,6 +113,9 @@ const countdown = computed(() => {
   return `${minutes}分${seconds}秒`;
 });
 
+// 动态颜色样式
+const remainingTimeColorClass = computed(() => (isWarning.value ? 'text--warning' : 'text--default'));
+
 // Update the current time every second
 const updateNow = () => {
   now.value = new Date();
@@ -128,24 +129,33 @@ updateNow();
   font-size: 2.5rem !important;
 }
 
+.line-item {
+  margin-bottom: 16px;
+}
+
+.text--default {
+  color: white !important;
+}
+
 .text--warning {
-  color: #ffc107 !important; /* Vuetify's default warning color */
+  color: #ff0000 !important;
 }
 
 .text--info {
-  color: #17a2b8 !important; /* Info color */
+  color: #ffff00 !important;
+}
+
+.text--ended {
+  font-size: 2.5rem !important;
+  color: #666;
 }
 
 .status-before {
   color: orange;
 }
 
-.status-soon {
-  color: #ff9800; /* 即将开始的颜色 */
-}
-
 .status-middle {
-  color: #00ff00;
+  color: green;
 }
 
 .status-after {
@@ -154,5 +164,9 @@ updateNow();
 
 .subject-info-card {
   margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 </style>
