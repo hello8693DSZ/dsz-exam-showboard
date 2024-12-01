@@ -1,13 +1,8 @@
 <div align="center">
 
-<image src="resources/icon.png" height="64"/>
+# <image src="resources/icon.png" height="28"/> ExamShowboard-Next
 
-# dsz-exam-showboard-next
-
-# DSZ考试看板 next（原DSZ考试看板）
-
-![WelcomePage](/.Screenshots/WelcomePage.jpg)
-![ExamPage](/.Screenshots/ExamPage.jpg)
+> 考试看板 Next —— 下一代考试看板
 
 [![stars](https://img.shields.io/github/stars/MKStoler4096/dsz-exam-showboard-next?label=Stars)](https://github.com/MKStoler4096/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/MKStoler4096/dsz-exam-showboard-next?label=Forks)](https://github.com/MKStoler4096/dsz-exam-showboard-next/forks)
@@ -27,9 +22,14 @@
 | 下载 | [Releases](https://github.com/MKStoler4096/dsz-exam-showboard-next/releases) | [Actions](https://github.com/MKStoler4096/dsz-exam-showboard-next/actions) |
 | ---- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 
+![WelcomePage](/.Screenshots/WelcomePage.jpg)
+![ExamPage](/.Screenshots/ExamPage.jpg)
+
 </div>
 
-> [!tip] > **本软件使用`Vue` + `TypeScript` + `JavaScript`制作，使用`Node.js` + `Electron`完善系统级功能并打包。**
+> [!tip]
+> 
+> **本软件使用`Vue` + `TypeScript` + `JavaScript`制作，使用`Node.js` + `Electron`完善系统级功能并打包。**
 
 ## 功能
 
@@ -88,8 +88,14 @@
 
 ### 推荐开发环境
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-  > [!Caution] > **必须使用Yarn包管理。Node版本要求为20。**
+- [VSCode](https://code.visualstudio.com/)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+> [!IMPORTANT]
+> 
+> **必须使用Yarn包管理。Node版本要求为20。**
 
 ### 工程构建
 
@@ -129,9 +135,6 @@ $ yarn build:linux
 - 正在[`master`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/master)分支上维护`1.2-Yesod`版本。
 
 - 正在[`dev`](https://github.com/MKStoler4096/dsz-exam-showboard-next/commits/dev)分支上开发`1.3-HOD`版本。
-
-> [!note]
-> **如果dev模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。build后没有此问题。**
 
 ## Stars 历史
 
