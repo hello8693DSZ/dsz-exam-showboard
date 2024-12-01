@@ -5,7 +5,7 @@
         当前科目:<span class="text-h5 ml-2">{{ exam.name }}</span>
       </div>
       <div class="text-h5 line-item">
-        考试时间: {{ formatDateTime(exam.start) }} - {{ formatDateTime(exam.end) }}
+        考试时间: {{ formatDateTime(exam.start) }} ～ {{ formatDateTime(exam.end) }}
       </div>
       <div class="text-h5 line-item">
         考试状态: <span :class="statusColor">{{ statusText }}</span>
