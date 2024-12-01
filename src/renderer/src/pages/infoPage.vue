@@ -1,7 +1,7 @@
 <template>
   <v-container class="main-area">
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" class="d-flex justify-space-between align-center mb-4">
         <h1 class="large-title">{{ globalStore.examName }}</h1>
         <h2 class="medium-title">{{ globalStore.message }}</h2>
       </v-col>
@@ -43,7 +43,7 @@ const scheduleNextUpdate = () => {
   if (nextExam) {
     const nextEndTime = new Date(nextExam.end).getTime();
     const now = Date.now();
-    const delay = nextEndTime - now + 60000; // 下一次考试结束时间 + 1分钟
+    const delay = nextEndTime - now + 60000;
 
     timeout = setTimeout(() => {
       updateCurrentExam();
@@ -66,15 +66,19 @@ onUnmounted(() => {
 
 <style scoped>
 .main-area {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .large-title {
-  font-size: 3em; /* 放大h1文字 */
+  font-size: 3em;
 }
 
 .medium-title {
-  font-size: 1em; /* 略小一点的h2文字 */
+  font-size: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
 }
 </style>
