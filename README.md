@@ -2,12 +2,10 @@
 
 <image src="resources/icon.png" height="64"/>
 
-# dsz-exam-showboard-next
+# ExamShowboard-Next（下一代考试看板）
 
-# DSZ考试看板 next（原DSZ考试看板）
-
-![WelcomePage](/.Screenshots/WelcomePage.jpg)
-![ExamPage](/.Screenshots/ExamPage.jpg)
+![HomePage](/.Screenshots/HomePage.jpg)
+![InfoPage](/.Screenshots/InfoPage.jpg)
 
 [![stars](https://img.shields.io/github/stars/ProjectCampus-CH/dsz-exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/ProjectCampus-CH/dsz-exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/forks)
