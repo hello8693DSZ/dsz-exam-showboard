@@ -46,7 +46,7 @@ const scheduleNextUpdate = () => {
   if (nextExam) {
     const nextEndTime = new Date(nextExam.end).getTime();
     const now = Date.now();
-    const delay = nextEndTime - now + 60000;
+    const delay = nextEndTime - now + 60000; // Next exam end time + 1 minute
 
     timeout = setTimeout(() => {
       updateCurrentExam();
