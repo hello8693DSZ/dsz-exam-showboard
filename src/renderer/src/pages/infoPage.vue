@@ -1,97 +1,85 @@
 <template>
-  <v-container class="main-area">
-    <v-row>
-      <v-col cols="12" class="d-flex justify-space-between align-center mb-4">
-        <h1 class="large-title">{{ globalStore.examName }}</h1>
-        <h2 class="medium-title">{{ globalStore.room }}</h2>
-      </v-col>
-      <v-col cols="12">
-        <h3 class="small-title text-left">{{ globalStore.message }}</h3>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col cols="6">
-        <Clock></Clock>
-        <SubjectInfo :exam="currentExam" />
-      </v-col>
-
-      <v-col cols="6">
-        <ExamList :exam="globalStore.examInfos"></ExamList>
+  <v-container class="main-container" fill-height>
+    <v-row justify="center" align="center">
+      <v-col cols="12" md="10">
+        <v-card class="pa-4" outlined>
+          <v-card-title class="text-h3">关于考试看板</v-card-title>
+          <v-card-text>
+            <p class="text-lg">
+              欢迎使用考试看板，这是一款用于展示考试信息的工具，帮助考生更好地了解考试信息与状态。
+            </p>
+            <p class="text-lg">本软件旨在为考生提供便捷的考试信息查看体验。</p>
+            <p class="text-lg developer">
+              开发者：
+              <a href="https://github.com/hello8693DSZ" target="_blank" class="developer-name">Hello8963</a>
+              &nbsp;&nbsp; &nbsp;
+              <a href="https://github.com/MKStoler4096" target="_blank" class="developer-name">Mkstoler4096</a>
+            </p>
+            <v-btn
+              href="https://github.com/ProjectCampus-CH/dsz-exam-showboard-next"
+              target="_blank"
+              color="primary"
+              class="mt-4 normal-case"
+            >
+              在 GitHub 上查看源代码
+            </v-btn>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { useProfileStore } from '@renderer/stores/app';
-import { getCurrentTimeSlot, getNextExamTimeSlot } from '@renderer/utils/subjectUtils';
-
-const globalStore = useProfileStore();
-const currentExam = ref(null);
-let timeout = null;
-
-const updateCurrentExam = () => {
-  const current = getCurrentTimeSlot(globalStore.examInfos);
-  currentExam.value = current ? current : getNextExamTimeSlot(globalStore.examInfos);
-};
-
-const scheduleNextUpdate = () => {
-  if (timeout) {
-    clearTimeout(timeout);
-  }
-
-  const nextExam = getNextExamTimeSlot(globalStore.examInfos);
-  if (nextExam) {
-    const nextEndTime = new Date(nextExam.end).getTime();
-    const now = Date.now();
-    const delay = nextEndTime - now + 60000;
-
-    timeout = setTimeout(() => {
-      updateCurrentExam();
-      scheduleNextUpdate();
-    }, delay);
-  }
-};
-
-onMounted(() => {
-  updateCurrentExam();
-  scheduleNextUpdate();
-});
-
-onUnmounted(() => {
-  if (timeout) {
-    clearTimeout(timeout);
-  }
-});
-</script>
-
 <style scoped>
-.main-area {
-  padding-left: 10px;
-  padding-right: 10px;
+.main-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.large-title {
-  font-size: 3em;
+.v-card {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-.medium-title {
-  font-size: 3em;
-  margin-top: 10px;
-  text-align: right;
+.v-card:hover {
+  transform: scale(1.05);
 }
 
-.small-title {
-  font-size: 1.5em;
-  margin-top: 5px;
-  color: gray;
-  text-align: left;
-  line-height: 1.2;
+/* 调整字体大小 */
+.text-h3 {
+  font-size: 2.5em !important;
 }
 
-.mb-4 {
-  margin-bottom: 20px;
+.text-lg {
+  font-size: 1.2em;
+}
+
+.v-btn {
+  height: 48px;
+  font-size: 1.1em;
+}
+
+.normal-case {
+  text-transform: none !important;
+}
+
+/* 开发者名字背景框 */
+.developer-name {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0 6px;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.developer-name:hover {
+  text-decoration: underline;
 }
 </style>
