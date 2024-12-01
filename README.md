@@ -65,13 +65,16 @@
     },
     {
       "name": "科目/科目",
-      "//name": "如果有两个科目可以自动转化为双行显示",
       "start": "2024-12-01T09:00:00",
       "end": "2024-12-01T10:00:00"
     }
   ]
 }
 ```
+
+>[!tip]
+>
+>如果有两个科目可以自动转化为双行显示
 
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
@@ -84,7 +87,7 @@
 >可以在 `Raw 文件` 前加上镜像源，如
 >
 >```
->https://raw.githubusercontent.com/Jursin/Exam-showboard-mgmt-cfg/refs/heads/main/exam_config.json
+>https://github.moeyy.xyz/https://raw.githubusercontent.com/Jursin/Exam-showboard-mgmt-cfg/refs/heads/main/exam_config.json
 >```
 
 - 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
