@@ -1,6 +1,6 @@
 <div align="center">
 
-<image src="resources/icon.png" height="64"/>
+<image src="resources/icon.png" height="128"/>
 
 # ExamShowboard-Next（下一代考试看板）
 
@@ -70,9 +70,9 @@
 }
 ```
 
->[!tip]
+> [!tip]
 >
->如果有两个科目可以自动转化为双行显示
+> 如果有两个以"/"分隔的科目可以自动转化为双行显示
 
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
@@ -80,9 +80,9 @@
   - 上传上面提到的 `exam_config.json` 文件
   - 复制 `Raw` 直链粘贴到应用`请求地址`文本框并保存
 
->[!tip]
+> [!tip]
 >
->可以在 `Raw 文件` 前加上镜像源，如
+> 可以在 `Raw 文件` 前加上镜像源，如
 >
 >```
 >https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
