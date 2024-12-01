@@ -85,7 +85,7 @@
 >可以在 `Raw 文件` 前加上镜像源，如
 >
 >```
->https://github.moeyy.xyz/https://raw.githubusercontent.com/Jursin/Exam-showboard-mgmt-cfg/refs/heads/main/exam_config.json
+>https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
 >```
 
 - 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
@@ -127,7 +127,7 @@ $ yarn dev
 $ yarn start
 ```
 
-> [!note]
+> [!important]
 >
 > **如果 dev 模式页面不显示或按钮点击无效等问题，请连续刷新至少3次后再进行操作。 build 后没有此问题。**
 
