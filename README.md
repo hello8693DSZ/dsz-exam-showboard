@@ -172,6 +172,13 @@ $ yarn build:linux
                     <sub><b>fhz08</b></sub>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://github.com/wjj-8283">
+                    <img src="https://avatars.githubusercontent.com/u/82750345?v=4" width="100;" alt="wjj-8283"/>
+                    <br />
+                    <sub><b>wjj-8283</b></sub>
+                </a>
+            </td>
 		</tr>
 	<tbody>
 </table>
