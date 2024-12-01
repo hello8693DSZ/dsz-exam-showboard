@@ -84,8 +84,8 @@ onUnmounted(() => {
 }
 
 .small-title {
-  font-size: 1.5em;
-  margin-top: 3px;
+  font-size: 2.0em;
+  margin-top: 2px;
   color: gray;
   text-align: left;
   line-height: 1.2;
