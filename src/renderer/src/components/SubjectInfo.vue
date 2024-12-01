@@ -11,7 +11,6 @@
         考试状态: <span :class="statusColor">{{ statusText }}</span>
       </div>
       <div v-if="showCountdown" class="text-h5 text--info line-item">开考倒计时: {{ countdown }}</div>
-      <div v-if="isWarning" class="text-h5 text--warning line-item">考试即将结束</div>
       <div v-if="showRemainingTime" :class="['text-h5', remainingTimeColorClass, 'line-item']">
         考试剩余时间: {{ remainingTime }}
       </div>
@@ -64,15 +63,6 @@ const statusText = computed(() => {
   if (now.value >= end) return '已结束';
 });
 
-const isWarning = computed(() => {
-  if (!props.exam) return false;
-
-  const end = new Date(props.exam.end);
-  const fifteenMinutesBeforeEnd = new Date(end.getTime() - 15 * 60 * 1000);
-
-  return now.value >= fifteenMinutesBeforeEnd && now.value < end;
-});
-
 const showRemainingTime = computed(() => {
   if (!props.exam) return false;
 
@@ -114,7 +104,14 @@ const countdown = computed(() => {
 });
 
 // 动态颜色样式
-const remainingTimeColorClass = computed(() => (isWarning.value ? 'text--warning' : 'text--default'));
+const remainingTimeColorClass = computed(() => {
+  if (!props.exam) return 'text--default';
+
+  const end = new Date(props.exam.end);
+  const fifteenMinutesBeforeEnd = new Date(end.getTime() - 15 * 60 * 1000);
+
+  return now.value >= fifteenMinutesBeforeEnd && now.value < end ? 'text--warning' : 'text--default';
+});
 
 // Update the current time every second
 const updateNow = () => {
