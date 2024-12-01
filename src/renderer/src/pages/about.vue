@@ -12,7 +12,7 @@
             <p class="text-lg developer">
               开发者：
               <a href="https://github.com/hello8693DSZ" target="_blank" class="developer-name">Hello8963</a>
-              &nbsp;&nbsp; &nbsp;
+              <span> </span>
               <a href="https://github.com/MKStoler4096" target="_blank" class="developer-name">Mkstoler4096</a>
             </p>
             <v-btn
