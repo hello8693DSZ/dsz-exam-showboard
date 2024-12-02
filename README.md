@@ -17,6 +17,7 @@
 [![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/master)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
+
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
 
@@ -24,6 +25,9 @@
 
 | 下载 | [Releases](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/actions) |
 | - | - | - |
+
+![WelcomePage](/.Screenshots/WelcomePage.jpg)
+![ExamPage](/.Screenshots/ExamPage.jpg)
 
 </div>
 
@@ -113,6 +117,7 @@
 > 
 > **必须使用 Yarn 包管理。Node 版本要求为20。**
 
+
 ### 工程构建
 
 #### 配置
@@ -199,6 +204,7 @@ $ yarn build:linux
 <!-- readme: collaborators,contributors -end -->
 
 ## Stars 历史
+
 
 <div align="center">
 
