@@ -1,6 +1,6 @@
 name: Bug 反馈
 description: 在使用考试看板 Next 的过程中遇到了 Bug 。
-title: （输入标题）
+title: （在这里输入你的标题）
 labels: ['Bug', '未阅读']
 body:
   - type: markdown
@@ -9,9 +9,10 @@ body:
         感谢您进行 Bug 反馈。请在上面的文本框⬆️起一个能够清晰描述您的问题的标题，便于开发者解决您的问题。
 
         > [!important]
-        > 重要：如果要提出**多个 Bug **，请为每一个 Bug 开一个单独的 issue。
+        > 
+        > 如果要提出**多个 Bug **，请为每一个 Bug 开一个单独的 issue。
         >
-        > 如果您不知道如何有效、精准地表述，我们建议您先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
+        > 如果您不知道如何有效、精准地表述，建议先阅读[《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。
 
   - type: checkboxes
     id: checklist
@@ -19,9 +20,9 @@ body:
       label: 检查清单
       description: 在开始反馈这个问题之前，请先检查：
       options:
-        - label: 我已更新到最新版，并看过最新提交，确认这一 Bug 还没有修复。
+        - label: 我已更新到最新版 ![最新的版本号](https://img.shields.io/github/v/release/ProjectCampus-CH/dsz-exam-showboard-next?include_prereleases&style=flat) ，并看过[最新提交](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/dev/)，确认这一 Bug 还没有修复。
           required: true
-        - label: 我已在 Issues 中检索，确认这一 Bug 未被提交过。
+        - label: 我已在 [Issues](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/issues?q=label%3ABug) 中检索，确认这一 Bug 未被提交过。
           required: true
         - label: 我已知晓并同意，此处仅用于汇报程序中存在的问题（关于其他非程序本身的问题应当在 Discussion 板块提出）。
           required: true
