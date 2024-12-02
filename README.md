@@ -164,10 +164,10 @@ $ yarn build:linux
 	<tbody>
 		<tr>
             <td align="center">
-                <a href="https://github.com/Jursin">
-                    <img src="https://avatars.githubusercontent.com/u/127487914?v=4" width="100;" alt="Jursin"/>
+                <a href="https://github.com/MKStoler4096">
+                    <img src="https://avatars.githubusercontent.com/u/178344462?v=4" width="100;" alt="MKStoler4096"/>
                     <br />
-                    <sub><b>Jursin</b></sub>
+                    <sub><b>MKStoler</b></sub>
                 </a>
             </td>
             <td align="center">
@@ -178,10 +178,10 @@ $ yarn build:linux
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/MKStoler4096">
-                    <img src="https://avatars.githubusercontent.com/u/178344462?v=4" width="100;" alt="MKStoler4096"/>
+                <a href="https://github.com/Jursin">
+                    <img src="https://avatars.githubusercontent.com/u/127487914?v=4" width="100;" alt="Jursin"/>
                     <br />
-                    <sub><b>MKStoler</b></sub>
+                    <sub><b>Jursin</b></sub>
                 </a>
             </td>
             <td align="center">
