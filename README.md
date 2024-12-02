@@ -24,12 +24,11 @@
 一款显示当前时间与考试详细信息的看板类软件
 
 | 下载 | [Releases](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/actions) |
-| - | - | - |
+| ---- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 
 </div>
 
-> [!tip]
-> **本软件使用 `Vue` + `TypeScript` + `JavaScript` 制作，使用 `Node.js` + `Electron` 完善系统级功能并打包。**
+> [!tip] > **本软件使用 `Vue` + `TypeScript` + `JavaScript` 制作，使用 `Node.js` + `Electron` 完善系统级功能并打包。**
 
 ## 功能
 
@@ -74,7 +73,7 @@
 > [!tip]
 >
 > `message` 与 `room` 为选填
-> 
+>
 > 如果有两个以"/"分隔的科目可以自动转化为双行显示
 
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
@@ -87,9 +86,9 @@
 >
 > 可以在 `Raw 文件` 前加上镜像源，如
 >
->```
->https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
->```
+> ```
+> https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
+> ```
 
 - 点击`请求配置`加载配置文件并进入看板（下次可直接点击`直接进入看板`加载上次配置文件）
 
@@ -111,9 +110,8 @@
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 > [!Caution]
-> 
+>
 > **必须使用 Yarn 包管理。Node 版本要求为20。**
-
 
 ### 工程构建
 
@@ -201,7 +199,6 @@ $ yarn build:linux
 <!-- readme: collaborators,contributors -end -->
 
 ## Stars 历史
-
 
 <div align="center">
 
