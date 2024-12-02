@@ -26,9 +26,6 @@
 | 下载 | [Releases](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/actions) |
 | - | - | - |
 
-![WelcomePage](/.Screenshots/WelcomePage.jpg)
-![ExamPage](/.Screenshots/ExamPage.jpg)
-
 </div>
 
 > [!tip]
