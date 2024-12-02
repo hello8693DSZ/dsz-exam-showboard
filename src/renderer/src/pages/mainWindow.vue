@@ -9,7 +9,7 @@
           <v-btn block color="deep-purple accent-4" dark class="mt-2" @click="openDialog"
             >打开配置</v-btn
           >
-          <p class="mt-2 text-center">打开 JSON 配置文件</p>
+          <p class="mt-2 text-center">打开 Json 配置文件</p>
         </v-card>
       </v-col>
       <v-col cols="12" md="4" class="d-flex flex-column">
