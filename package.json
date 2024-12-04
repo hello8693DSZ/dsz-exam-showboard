@@ -46,7 +46,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^19.2.2",
     "@electron-toolkit/eslint-config": "^1.0.1",
-    "@electron-toolkit/eslint-config-ts": "^1.0.1",
+    "@electron-toolkit/eslint-config-ts": "^2.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@rushstack/eslint-patch": "^1.6.1",
     "@types/vue": "^2.0.0",
