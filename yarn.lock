@@ -7267,10 +7267,10 @@ vite-plugin-vue-layouts@^0.11.0:
     debug "^4.3.4"
     fast-glob "^3.3.2"
 
-vite-plugin-vuetify@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmmirror.com/vite-plugin-vuetify/-/vite-plugin-vuetify-2.0.3.tgz#b65ee4e05cfc6bf2b478a32b6d58b42398519f1e"
-  integrity sha512-HbYajgGgb/noaVKNRhnnXIiQZrNXfNIeanUGAwXgOxL6h/KULS40Uf51Kyz8hNmdegF+DwjgXXI/8J1PNS83xw==
+vite-plugin-vuetify@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vuetify/-/vite-plugin-vuetify-2.0.4.tgz#9beb700ee50da58d83399721d6cf4b0af83202d5"
+  integrity sha512-A4cliYUoP/u4AWSRVRvAPKgpgR987Pss7LpFa7s1GvOe8WjgDq92Rt3eVXrvgxGCWvZsPKziVqfHHdCMqeDhfw==
   dependencies:
     "@vuetify/loader-shared" "^2.0.3"
     debug "^4.3.3"
