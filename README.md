@@ -159,6 +159,13 @@ $ yarn build:linux
 	<tbody>
 		<tr>
             <td align="center">
+                <a href="https://github.com/Jursin">
+                    <img src="https://avatars.githubusercontent.com/u/127487914?v=4" width="100;" alt="Jursin"/>
+                    <br />
+                    <sub><b>Jursin</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/MKStoler4096">
                     <img src="https://avatars.githubusercontent.com/u/178344462?v=4" width="100;" alt="MKStoler4096"/>
                     <br />
@@ -170,13 +177,6 @@ $ yarn build:linux
                     <img src="https://avatars.githubusercontent.com/u/88492699?v=4" width="100;" alt="hello8693DSZ"/>
                     <br />
                     <sub><b>Hello8693</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/Jursin">
-                    <img src="https://avatars.githubusercontent.com/u/127487914?v=4" width="100;" alt="Jursin"/>
-                    <br />
-                    <sub><b>Jursin</b></sub>
                 </a>
             </td>
             <td align="center">
