@@ -64,7 +64,7 @@
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "pinia": "^2.1.7",
-    "prettier": "^3.2.4",
+    "prettier": "^3.4.2",
     "raw-loader": "^4.0.2",
     "roboto-fontface": "*",
     "sass": "^1.71.1",
