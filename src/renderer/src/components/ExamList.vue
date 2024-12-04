@@ -14,7 +14,7 @@
             <template #item="{ item }">
               <tr :style="{ lineHeight: item.name.includes('/') ? '2.5rem' : '2.0rem' }">
                 <td v-if="item.showDate" class="text-h5 date-column" :rowspan="item.rowspan">
-                  {{ item.date }}<br>{{ item.period }}
+                  {{ item.date }}<br />{{ item.period }}
                 </td>
                 <td class="text-h5 subject-column">
                   <div v-if="item.name.includes('/')">
@@ -80,9 +80,10 @@ const groupedExams = computed(() => {
   let currentDate = '';
   let currentPeriod = '';
   sortedExams.value.forEach((exam, index) => {
-    const examDate = new Date(exam.start)
-      .toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' })
-      .replace('/', '月') + '日';
+    const examDate =
+      new Date(exam.start)
+        .toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' })
+        .replace('/', '月') + '日';
     const period = formatPeriod(exam.start);
     const showDate = examDate !== currentDate || period !== currentPeriod;
     if (showDate) {
@@ -92,8 +93,9 @@ const groupedExams = computed(() => {
         (e) =>
           new Date(e.start)
             .toLocaleDateString('zh-CN', { month: 'numeric', day: 'numeric' })
-            .replace('/', '月') + '日' === currentDate &&
-          formatPeriod(e.start) === currentPeriod
+            .replace('/', '月') +
+            '日' ===
+            currentDate && formatPeriod(e.start) === currentPeriod
       ).length;
       grouped.push({ ...exam, date: examDate, period, showDate, rowspan });
     } else {

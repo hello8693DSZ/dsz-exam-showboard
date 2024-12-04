@@ -6,7 +6,7 @@ export const useProfileStore = defineStore('app', {
     examName: '考试名称',
     appHeader: '考试看板',
     message: '考试提醒信息',
-    room: '考场号',
+    room: ' ',
     examInfos: []
   }),
   persist: true

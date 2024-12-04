@@ -78,7 +78,7 @@ onUnmounted(() => {
 }
 
 .medium-title {
-  font-size: 2.0em;
+  font-size: 2em;
   color: gray;
   text-align: left;
 }
@@ -87,5 +87,4 @@ onUnmounted(() => {
   font-size: 3em;
   text-align: right;
 }
-
 </style>

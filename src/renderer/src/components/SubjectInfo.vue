@@ -10,9 +10,11 @@
       <div class="text-h5 line-item">
         考试状态: <span :class="statusColor">{{ statusText }}</span>
       </div>
-      <div v-if="showCountdown" class="text-h5 text--info line-item">开考倒计时: {{ countdown }}</div>
+      <div v-if="showCountdown" class="text-h5 text--info line-item">
+        开考倒计时: {{ countdown }}
+      </div>
       <div v-if="showRemainingTime" :class="['text-h5', remainingTimeColorClass, 'line-item']">
-        考试剩余时间: {{ remainingTime }}
+        剩余时间: {{ remainingTime }}
       </div>
     </v-card-text>
   </v-card>
@@ -53,7 +55,7 @@ const statusColor = computed(() => {
 });
 
 const statusText = computed(() => {
-  if (!props.exam) return '考试已结束';
+  if (!props.exam) return '全部考试均已结束';
 
   const start = new Date(props.exam.start);
   const end = new Date(props.exam.end);
@@ -110,7 +112,9 @@ const remainingTimeColorClass = computed(() => {
   const end = new Date(props.exam.end);
   const fifteenMinutesBeforeEnd = new Date(end.getTime() - 15 * 60 * 1000);
 
-  return now.value >= fifteenMinutesBeforeEnd && now.value < end ? 'text--warning' : 'text--default';
+  return now.value >= fifteenMinutesBeforeEnd && now.value < end
+    ? 'text--warning'
+    : 'text--default';
 });
 
 // Update the current time every second
