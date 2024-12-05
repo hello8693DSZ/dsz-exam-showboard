@@ -17,6 +17,7 @@
 [![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/master)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
+[![All Contributors](https://img.shields.io/github/all-contributors/ProjectCampus-CH/exam-showboard-next?color=ee8449&style=flat-square)](#贡献者)
 
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
@@ -153,6 +154,15 @@ $ yarn build:linux
 - 正在 [`dev`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/dev) 分支上开发`1.3-HOD`版本。
 
 ## 贡献者
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <!-- readme: collaborators,contributors -start -->
 <table>
