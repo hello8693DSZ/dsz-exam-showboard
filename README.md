@@ -162,6 +162,7 @@ $ yarn build:linux
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://qsgz.edicdn.eu.org"><img src="https://avatars.githubusercontent.com/u/178344462?v=4?s=100" width="100px;" alt="MKStoler"/><br /><sub><b>MKStoler</b></sub></a><br /><a href="#code-MKStoler4096" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jursin"><img src="https://avatars.githubusercontent.com/u/127487914?v=4?s=100" width="100px;" alt="Jursin"/><br /><sub><b>Jursin</b></sub></a><br /><a href="#content-Jursin" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
