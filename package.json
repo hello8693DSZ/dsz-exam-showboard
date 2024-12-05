@@ -61,7 +61,7 @@
     "electron-vite": "^2.0.0",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.32.0",
-    "husky": "^9.1.5",
+    "husky": "^9.1.7",
     "lint-staged": "^15.2.9",
     "pinia": "^2.1.7",
     "prettier": "^3.4.2",
