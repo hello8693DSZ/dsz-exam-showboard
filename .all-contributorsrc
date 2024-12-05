@@ -1,4 +1,21 @@
 {
   "projectName": "exam-showboard-next",
-  "projectOwner": "ProjectCampus-CH"
+  "projectOwner": "ProjectCampus-CH",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "MKStoler4096",
+      "name": "MKStoler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/178344462?v=4",
+      "profile": "http://qsgz.edicdn.eu.org",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
