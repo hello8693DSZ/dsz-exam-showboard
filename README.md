@@ -162,6 +162,10 @@ $ yarn build:linux
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://qsgz.edicdn.eu.org"><img src="https://avatars.githubusercontent.com/u/178344462?v=4?s=100" width="100px;" alt="MKStoler"/><br /><sub><b>MKStoler</b></sub></a><br /><a href="#code-MKStoler4096" title="Code">💻</a> <a href="#bug-MKStoler4096" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jursin"><img src="https://avatars.githubusercontent.com/u/127487914?v=4?s=100" width="100px;" alt="Jursin"/><br /><sub><b>Jursin</b></sub></a><br /><a href="#content-Jursin" title="Content">🖋</a> <a href="#design-Jursin" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hello8693DSZ"><img src="https://avatars.githubusercontent.com/u/88492699?v=4?s=100" width="100px;" alt="Hello8693"/><br /><sub><b>Hello8693</b></sub></a><br /><a href="#code-hello8693DSZ" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fhz08"><img src="https://avatars.githubusercontent.com/u/152045732?v=4?s=100" width="100px;" alt="fhz08"/><br /><sub><b>fhz08</b></sub></a><br /><a href="#code-fhz08" title="Code">💻</a> <a href="#bug-fhz08" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/wjj-8283"><img src="https://avatars.githubusercontent.com/u/82750345?v=4?s=100" width="100px;" alt="wjj-8283"/><br /><sub><b>wjj-8283</b></sub></a><br /><a href="#code-wjj-8283" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
@@ -170,50 +174,6 @@ $ yarn build:linux
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<!-- readme: collaborators,contributors -start -->
-<table>
-	<tbody>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/Jursin">
-                    <img src="https://avatars.githubusercontent.com/u/127487914?v=4" width="100;" alt="Jursin"/>
-                    <br />
-                    <sub><b>Jursin</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/MKStoler4096">
-                    <img src="https://avatars.githubusercontent.com/u/178344462?v=4" width="100;" alt="MKStoler4096"/>
-                    <br />
-                    <sub><b>MKStoler</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/hello8693DSZ">
-                    <img src="https://avatars.githubusercontent.com/u/88492699?v=4" width="100;" alt="hello8693DSZ"/>
-                    <br />
-                    <sub><b>Hello8693</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/fhz08">
-                    <img src="https://avatars.githubusercontent.com/u/152045732?v=4" width="100;" alt="fhz08"/>
-                    <br />
-                    <sub><b>fhz08</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/wjj-8283">
-                    <img src="https://avatars.githubusercontent.com/u/82750345?v=4" width="100;" alt="wjj-8283"/>
-                    <br />
-                    <sub><b>wjj-8283</b></sub>
-                </a>
-            </td>
-		</tr>
-	<tbody>
-</table>
-<!-- readme: collaborators,contributors -end -->
 
 ## Stars 历史
 
