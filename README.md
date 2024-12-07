@@ -1,11 +1,8 @@
 <div align="center">
 
-<image src="resources/icon.png" height="128"/>
+# <image src="resources/icon.png" height="36"/> ExamShowboard-Next
 
-# ExamShowboard-Next（下一代考试看板）
-
-![HomePage](/.Screenshots/HomePage.png)
-![InfoPage](/.Screenshots/InfoPage.png)
+> 下一代考试看板
 
 [![stars](https://img.shields.io/github/stars/ProjectCampus-CH/dsz-exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
 [![forks](https://img.shields.io/github/forks/ProjectCampus-CH/dsz-exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/forks)
@@ -17,10 +14,13 @@
 [![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/master)
 [![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
 [![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
-[![All Contributors](https://img.shields.io/github/all-contributors/ProjectCampus-CH/exam-showboard-next?color=ee8449&style=flat-square)](#贡献者)
 
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+[![All Contributors](https://img.shields.io/github/all-contributors/ProjectCampus-CH/exam-showboard-next?color=ee8449)](#贡献者)
+
+![HomePage](/.Screenshots/HomePage.png)
+![InfoPage](/.Screenshots/InfoPage.png)
 
 一款显示当前时间与考试详细信息的看板类软件
 
@@ -90,7 +90,7 @@
 >
 > 可以在 `Raw 文件` 前加上镜像源，如
 >
-> ```
+> ```txt
 > https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
 > ```
 
