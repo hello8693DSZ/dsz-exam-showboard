@@ -54,7 +54,7 @@ function saveUrl() {
 async function fetchConfig() {
   if (remoteUrl.value) {
     try {
-      const configResponse = await fetch(remoteUrl.value);
+      const configResponse = await fetch(remoteUrl.value, { cache: 'no-store' });
       if (!configResponse.ok) {
         throw new Error('无法获取配置文件');
       }

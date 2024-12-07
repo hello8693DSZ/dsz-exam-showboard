@@ -30,7 +30,7 @@
 </div>
 
 > [!tip]
-> 
+>
 > **本软件使用 `Vue` + `TypeScript` + `JavaScript` 制作，使用 `Node.js` + `Electron` 完善系统级功能并打包。**
 
 ## 功能
