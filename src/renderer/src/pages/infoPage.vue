@@ -1,3 +1,4 @@
+<!-- eslint-disable @typescript-eslint/no-unused-vars -->
 <template>
   <v-container class="main-area">
     <v-row>
@@ -5,7 +6,7 @@
         <h1 class="large-title">{{ globalStore.examName }}</h1>
         <h2 class="room">{{ globalStore.room }}</h2>
       </v-col>
-      <v-col cols="12" v-if="globalStore.message">
+      <v-col v-if="globalStore.message" cols="12">
         <h3 class="medium-title text-left">{{ globalStore.message }}</h3>
       </v-col>
     </v-row>
