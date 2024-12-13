@@ -4,7 +4,7 @@
 
     <template #append>
       <div class="ga-4">
-        <v-btn @click="router.push('/mainWindow')">回到主页</v-btn>
+        <v-btn @click="gotoHome">回到主页</v-btn>
         <v-btn @click="router.push('/about')">关于</v-btn>
         <v-icon icon="mdi-window-close" @click="ipcHandleExit"></v-icon>
       </div>
@@ -20,4 +20,8 @@ const profileStore = useProfileStore();
 const router = useRouter();
 
 const ipcHandleExit = () => window.electron.ipcRenderer.send('prog:exit');
+
+function gotoHome() {
+  router.push({ path: '/mainWindow', query: { skipAutoEnter: true } });
+}
 </script>
