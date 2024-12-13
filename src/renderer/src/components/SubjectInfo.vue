@@ -156,7 +156,7 @@ updateNow();
 }
 
 .status-middle {
-  color: green;
+  color: rgb(0, 255, 0);
 }
 
 .status-after {

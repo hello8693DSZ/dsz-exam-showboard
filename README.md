@@ -54,6 +54,12 @@
 
 新建文件 `exam_config.json` ，模板如下
 
+> [!warning]
+>
+> 请确保 `exam_config.json` 文件编码为 `UTF-8`，换行符为 `LF`，按照`json`文件格式填写。不然可能会出一些神奇的 Bug。
+>
+> 不确定？可以使用 [VSCode](https://code.visualstudio.com/) 打开、编辑文件，右下角显示编码格式和换行方式，点击即可更改。
+
 ```json
 {
   "examName": "考试名称",
@@ -76,7 +82,7 @@
 
 > [!tip]
 >
-> `message` 与 `room` 为选填
+> `message` 与 `room` 内容必填（可填空格隐藏），`examInfos` 至少需要一条数据。
 >
 > 如果有两个以"/"分隔的科目可以自动转化为双行显示
 
@@ -167,7 +173,7 @@ $ yarn build:linux
       <td align="center" valign="top" width="14.28%"><a href="http://qsgz.edicdn.eu.org"><img src="https://avatars.githubusercontent.com/u/178344462?v=4?s=100" width="100px;" alt="MKStoler"/><br /><sub><b>MKStoler</b></sub></a><br /><a href="#code-MKStoler4096" title="Code">💻</a> <a href="#bug-MKStoler4096" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jursin"><img src="https://avatars.githubusercontent.com/u/127487914?v=4?s=100" width="100px;" alt="Jursin"/><br /><sub><b>Jursin</b></sub></a><br /><a href="#content-Jursin" title="Content">🖋</a> <a href="#design-Jursin" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/hello8693DSZ"><img src="https://avatars.githubusercontent.com/u/88492699?v=4?s=100" width="100px;" alt="Hello8693"/><br /><sub><b>Hello8693</b></sub></a><br /><a href="#code-hello8693DSZ" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fhz08"><img src="https://avatars.githubusercontent.com/u/152045732?v=4?s=100" width="100px;" alt="fhz08"/><br /><sub><b>fhz08</b></sub></a><br /><a href="#code-fhz08" title="Code">💻</a> <a href="#bug-fhz08" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fhzit"><img src="https://avatars.githubusercontent.com/u/152045732?v=4?s=100" width="100px;" alt="fhzit"/><br /><sub><b>fhzit</b></sub></a><br /><a href="#code-fhzit" title="Code">💻</a> <a href="#bug-fhzit" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/wjj-8283"><img src="https://avatars.githubusercontent.com/u/82750345?v=4?s=100" width="100px;" alt="wjj-8283"/><br /><sub><b>wjj-8283</b></sub></a><br /><a href="#code-wjj-8283" title="Code">💻</a></td>
     </tr>
   </tbody>
