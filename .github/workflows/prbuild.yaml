@@ -1,4 +1,4 @@
-name: Release Build and Package
+name: Check and Build Program
 
 on:
   pull_request:
