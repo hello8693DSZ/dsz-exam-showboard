@@ -18,6 +18,7 @@
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
 [![All Contributors](https://img.shields.io/github/all-contributors/ProjectCampus-CH/exam-showboard-next?color=ee8449)](#贡献者)
+[![Build and Package Electron App](https://github.com/ProjectCampus-CH/exam-showboard-next/actions/workflows/build.yaml/badge.svg)](https://github.com/ProjectCampus-CH/exam-showboard-next/actions/workflows/build.yaml)
 
 ![HomePage](/.Screenshots/HomePage.png)
 ![InfoPage](/.Screenshots/InfoPage.png)
