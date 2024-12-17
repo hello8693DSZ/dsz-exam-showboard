@@ -63,7 +63,7 @@
     "eslint-plugin-vue": "^9.32.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
-    "pinia": "^2.1.7",
+    "pinia": "^2.3.0",
     "prettier": "^3.4.2",
     "raw-loader": "^4.0.2",
     "roboto-fontface": "*",
