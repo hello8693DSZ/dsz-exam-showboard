@@ -1,4 +1,4 @@
-name: Issues Similarity Analysis
+name: 相似 Issues 分析
 
 on:
   issues:

@@ -1,4 +1,4 @@
-name: Check and Build Program
+name: 检查 Pull Request 内容
 
 on:
   pull_request:

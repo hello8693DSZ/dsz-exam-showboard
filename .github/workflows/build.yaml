@@ -1,4 +1,4 @@
-name: Build and Package Electron App
+name: 推送时构建
 
 on:
   push:

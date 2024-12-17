@@ -1,4 +1,4 @@
-name: Close inactive issues
+name: 关闭不活跃 Issue 和 Pull Request
 on:
   workflow_dispatch: 
     
