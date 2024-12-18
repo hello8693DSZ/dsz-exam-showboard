@@ -176,6 +176,7 @@ $ yarn build:linux
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/hello8693DSZ"><img src="https://avatars.githubusercontent.com/u/88492699?v=4?s=100" width="100px;" alt="Hello8693"/><br /><sub><b>Hello8693</b></sub></a><br /><a href="#code-hello8693DSZ" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/fhzit"><img src="https://avatars.githubusercontent.com/u/152045732?v=4?s=100" width="100px;" alt="fhzit"/><br /><sub><b>fhzit</b></sub></a><br /><a href="#code-fhzit" title="Code">💻</a> <a href="#bug-fhzit" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/wjj-8283"><img src="https://avatars.githubusercontent.com/u/82750345?v=4?s=100" width="100px;" alt="wjj-8283"/><br /><sub><b>wjj-8283</b></sub></a><br /><a href="#code-wjj-8283" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/features/security"><img src="https://avatars.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt="Dependabot"/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#code-dependabot" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
