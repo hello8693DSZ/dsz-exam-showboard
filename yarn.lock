@@ -3809,7 +3809,7 @@ fast-diff@^1.1.2:
   resolved "https://registry.npmmirror.com/fast-diff/-/fast-diff-1.3.0.tgz#ece407fa550a64d638536cd727e129c61616e0f0"
   integrity sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==
 
-fast-glob@^3.2.12, fast-glob@^3.2.9, fast-glob@^3.3.2:
+fast-glob@^3.2.9, fast-glob@^3.3.2:
   version "3.3.2"
   resolved "https://registry.npmmirror.com/fast-glob/-/fast-glob-3.3.2.tgz#a904501e57cfdd2ffcded45e99a54fef55e46129"
   integrity sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==
@@ -7888,13 +7888,13 @@ unplugin-auto-import@^0.19.0:
     unimport "^3.14.5"
     unplugin "^2.1.0"
 
-unplugin-fonts@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmmirror.com/unplugin-fonts/-/unplugin-fonts-1.1.1.tgz#cd6600d2a048d8237a010b53c9c4dfb1ea73d80f"
-  integrity sha512-/Aw/rL9D2aslGGM0vi+2R2aG508RSwawLnnBuo+JDSqYc4cHJO1R1phllhN6GysEhBp/6a4B6+vSFPVapWyAAw==
+unplugin-fonts@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/unplugin-fonts/-/unplugin-fonts-1.3.1.tgz#84f2e446976d47d6d5bf9bed4bfa71d9adb1809e"
+  integrity sha512-GmaJWPAWH6lBI4fP8xKdbMZJwTgsnr8PGJOfQE52jlod8QkqSO4M529Nox2L8zYapjB5hox2wCu4N3c/LOal/A==
   dependencies:
-    fast-glob "^3.2.12"
-    unplugin "^1.3.1"
+    fast-glob "^3.3.2"
+    unplugin "2.0.0-beta.1"
 
 unplugin-vue-components@^0.27.3:
   version "0.27.3"
@@ -7940,7 +7940,7 @@ unplugin@2.0.0-beta.1:
     acorn "^8.14.0"
     webpack-virtual-modules "^0.6.2"
 
-unplugin@^1.11.0, unplugin@^1.16.0, unplugin@^1.3.1:
+unplugin@^1.11.0, unplugin@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-1.16.0.tgz#ca0f248bf8798cd752dd02e5b381223b737cef72"
   integrity sha512-5liCNPuJW8dqh3+DM6uNM2EI3MLLpCKp/KY+9pB5M2S2SR2qvvDHhKgBOaTWEbZTAws3CXfB0rKTIolWKL05VQ==
