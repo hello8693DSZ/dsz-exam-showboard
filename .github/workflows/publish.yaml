@@ -22,13 +22,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: 安装依赖
-        run: yarn install
-
-
       - name: Windows 设置镜像源
         if: matrix.os == 'windows-latest'
-        run: yarn build:win
+        run: yarn config set registry https://registry.npmmirror.com/
+
+
+      - name: 安装依赖
+        run: yarn install
 
       - name: Windows 构建
         if: matrix.os == 'windows-latest'
