@@ -56,7 +56,7 @@
     "commitlint": "^19.3.0",
     "core-js": "^3.39.0",
     "electron": "^33.2.1",
-    "electron-builder": "^24.9.1",
+    "electron-builder": "^25.1.8",
     "electron-icon-builder": "^2.0.1",
     "electron-vite": "^2.0.0",
     "eslint": "^8.56.0",
