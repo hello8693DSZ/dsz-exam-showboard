@@ -2,6 +2,8 @@
 
 # <image src="resources/icon.png" height="36"/> ExamShowboard-Next
 
+<!-- 测试-->
+
 > 下一代考试看板
 
 [![stars](https://img.shields.io/github/stars/ProjectCampus-CH/dsz-exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
