@@ -1,9 +1,11 @@
-name: 检查 Pull Request 内容
+name: 打包并生成应用
 
 on:
   pull_request:
     branches-ignore:
       - 'all-contributors/add-**'
+  release:
+    types: [published]
 
 jobs:
   build:
