@@ -6,16 +6,16 @@
 
 > 下一代考试看板
 
-[![stars](https://img.shields.io/github/stars/ProjectCampus-CH/dsz-exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
-[![forks](https://img.shields.io/github/forks/ProjectCampus-CH/dsz-exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/forks)
-[![Watchers](https://img.shields.io/github/watchers/ProjectCampus-CH/dsz-exam-showboard-next?style=social)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/watchers)
-[![Downloads](https://img.shields.io/github/downloads/ProjectCampus-CH/dsz-exam-showboard-next/total?style=social&label=Downloads&logo=github)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases)
-[![GitHub Issues](https://img.shields.io/github/issues-search/ProjectCampus-CH/dsz-exam-showboard-next?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/issues)
-[![GitHub Discussions](https://img.shields.io/github/discussions/ProjectCampus-CH/dsz-exam-showboard-next?style=flat&logo=Github&label=Discussions)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/discussions)
-[![Created At](https://img.shields.io/github/created-at/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
-[![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/master)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
-[![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/dsz-exam-showboard-next)](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next)
+[![stars](https://img.shields.io/github/stars/ProjectCampus-CH/exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/exam-showboard-next/stargazers)
+[![forks](https://img.shields.io/github/forks/ProjectCampus-CH/exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/exam-showboard-next/forks)
+[![Watchers](https://img.shields.io/github/watchers/ProjectCampus-CH/exam-showboard-next?style=social)](https://github.com/ProjectCampus-CH/exam-showboard-next/watchers)
+[![Downloads](https://img.shields.io/github/downloads/ProjectCampus-CH/exam-showboard-next/total?style=social&label=Downloads&logo=github)](https://github.com/ProjectCampus-CH/exam-showboard-next/releases)
+[![GitHub Issues](https://img.shields.io/github/issues-search/ProjectCampus-CH/exam-showboard-next?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ProjectCampus-CH/exam-showboard-next/issues)
+[![GitHub Discussions](https://img.shields.io/github/discussions/ProjectCampus-CH/exam-showboard-next?style=flat&logo=Github&label=Discussions)](https://github.com/ProjectCampus-CH/exam-showboard-next/discussions)
+[![创建d At](https://img.shields.io/github/created-at/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
+[![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/master)
+[![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
+[![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
 
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
@@ -27,7 +27,7 @@
 
 一款显示当前时间与考试详细信息的看板类软件
 
-| 下载 | [Releases](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/actions) |
+| 下载 | [Releases](https://github.com/ProjectCampus-CH/exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/exam-showboard-next/actions) |
 | ---- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 
 </div>
@@ -51,7 +51,7 @@
 
 - 下载安装程序并运行
 
-默认安装路径 `AppData\Local\Programs\dsz-exam-showboard`
+默认安装路径 `AppData\Local\Programs\exam-showboard`
 
 - 编写 `json` 配置文件
 
@@ -107,11 +107,11 @@
 
 ## 遇到问题
 
-💡 如果您遇到 `Bug` ，或需要提出`优化`建议或新的`功能`，请提交 [`Issues`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/issues) 或在 [`Discussions`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/discussions) 中讨论。
+💡 如果您遇到 `Bug` ，或需要提出`优化`建议或新的`功能`，请提交 [`Issues`](https://github.com/ProjectCampus-CH/exam-showboard-next/issues) 或在 [`Discussions`](https://github.com/ProjectCampus-CH/exam-showboard-next/discussions) 中讨论。
 
 👥 您也可以加入 [`QQ群｜901670561`](https://qm.qq.com/q/zDiEipHsaI)获取帮助或交流讨论。
 
-🛠️ 欢迎为本软件进行改进或编写新功能提交 [`Pull Request`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/pulls)
+🛠️ 欢迎为本软件进行改进或编写新功能提交 [`Pull Request`](https://github.com/ProjectCampus-CH/exam-showboard-next/pulls)
 
 ## 开发
 
@@ -161,9 +161,9 @@ $ yarn build:linux
 
 ### 开发进度
 
-- 正在 [`master`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/master) 分支上维护`1.2-Yesod`版本。
+- 正在 [`master`](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/master) 分支上维护`1.2-Yesod`版本。
 
-- 正在 [`dev`](https://github.com/ProjectCampus-CH/dsz-exam-showboard-next/commits/dev) 分支上开发`1.3-HOD`版本。
+- 正在 [`dev`](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/dev) 分支上开发`1.3-HOD`版本。
 
 ## 贡献者
 
@@ -192,8 +192,8 @@ $ yarn build:linux
 
 <div align="center">
 
-[![Star 历史](https://starchart.cc/ProjectCampus-CH/dsz-exam-showboard-next.svg?variant=adaptive)](https://starchart.cc/ProjectCampus-CH/dsz-exam-showboard-next/stargazers)
+[![Star 历史](https://starchart.cc/ProjectCampus-CH/exam-showboard-next.svg?variant=adaptive)](https://starchart.cc/ProjectCampus-CH/exam-showboard-next/stargazers)
 
-如果这个项目对您有帮助，请点亮 Star [⭐](#dsz-exam-showboard-next)
+如果这个项目对您有帮助，请点亮 Star [⭐](#exam-showboard-next)
 
 </div>
