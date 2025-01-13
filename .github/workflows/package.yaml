@@ -3,7 +3,7 @@ name: 打包并生成应用
 on:
   pull_request:
   release:
-  push:
+    types: [published]
   workflow_dispatch:
 
 jobs:
