@@ -60,3 +60,14 @@ jobs:
         with:
           name: ExamShowboard-Linux
           path: dist/*.AppImage
+
+      - name: Upload assets to GitHub Release
+        if: github.event_name == 'release' && github.event.action == 'published'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/*.exe
+            dist/*.dmg
+            dist/*.AppImage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
