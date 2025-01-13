@@ -2,16 +2,16 @@ name: 打包并生成应用
 
 on:
   pull_request:
-    branches-ignore:
-      - 'all-contributors/add-**'
   release:
-    types: [published]
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ${{ matrix.os }}
 
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
         node-version: [20.x]
