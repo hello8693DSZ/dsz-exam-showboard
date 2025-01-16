@@ -5,10 +5,20 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSZ Exam Showboard</title>
+    <style>
+      /* 隐藏滚动条 */
+      body {
+        overflow: hidden;
+      }
+      /* 适用于所有滚动容器 */
+      .no-scrollbar {
+        overflow: hidden;
+      }
+    </style>
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app" class="no-scrollbar"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

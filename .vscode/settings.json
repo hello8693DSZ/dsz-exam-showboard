@@ -25,5 +25,6 @@
       "command": "extension.execute",
       "priority": 4
     }
-  ]
+  ],
+  "Codegeex.RepoIndex": true
 }

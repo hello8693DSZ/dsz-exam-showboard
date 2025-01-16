@@ -1,14 +1,17 @@
-name: Release Build and Package
+name: 打包并生成应用
 
 on:
+  pull_request:
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ${{ matrix.os }}
 
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
         node-version: [20.x]
@@ -16,28 +19,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
-        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
-        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: yarn install
-        if: github.event.release.prerelease == false || matrix.os == 'windows-latest'
 
       - name: Build and package for Windows
-        if: github.event.release.prerelease == false && matrix.os == 'windows-latest'
+        if: matrix.os == 'windows-latest'
         run: yarn build:win
 
       - name: Build and package for macOS
-        if: github.event.release.prerelease == true && matrix.os == 'macos-latest'
+        if: matrix.os == 'macos-latest'
         run: yarn build:mac
 
       - name: Build and package for Linux
-        if: github.event.release.prerelease == true && matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest'
         run: yarn build:linux
 
       - name: Upload artifact for Windows
@@ -48,15 +48,26 @@ jobs:
           path: dist/*.exe
 
       - name: Upload artifact for macOS
-        if: github.event.release.prerelease == true && matrix.os == 'macos-latest'
+        if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
         with:
           name: ExamShowboard-macOS
           path: dist/*.dmg
 
       - name: Upload artifact for Linux
-        if: github.event.release.prerelease == true && matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v4
         with:
           name: ExamShowboard-Linux
           path: dist/*.AppImage
+
+      - name: Upload assets to GitHub Release
+        if: github.event_name == 'release' && github.event.action == 'published'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/*.exe
+            dist/*.dmg
+            dist/*.AppImage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
