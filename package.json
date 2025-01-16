@@ -44,7 +44,7 @@
     "vuetify": "^3.5.8"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/config-conventional": "^19.6.0",
     "@electron-toolkit/eslint-config": "^1.0.1",
     "@electron-toolkit/eslint-config-ts": "^2.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
