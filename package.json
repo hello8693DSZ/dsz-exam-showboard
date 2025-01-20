@@ -51,7 +51,7 @@
     "@rushstack/eslint-patch": "^1.6.1",
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.0.3",
-    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "commitlint": "^19.3.0",
     "core-js": "^3.34.0",
