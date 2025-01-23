@@ -1,33 +1,25 @@
 <div align="center">
 
-# <image src="resources/icon.png" height="36"/> ExamShowboard-Next
+# <image src="resources/icon.png" height="36"/> ExamShowboard
 
-<!-- 测试-->
-
-> 下一代考试看板
-
-[![stars](https://img.shields.io/github/stars/ProjectCampus-CH/exam-showboard-next?label=Stars)](https://github.com/ProjectCampus-CH/exam-showboard-next/stargazers)
-[![forks](https://img.shields.io/github/forks/ProjectCampus-CH/exam-showboard-next?label=Forks)](https://github.com/ProjectCampus-CH/exam-showboard-next/forks)
-[![Watchers](https://img.shields.io/github/watchers/ProjectCampus-CH/exam-showboard-next?style=social)](https://github.com/ProjectCampus-CH/exam-showboard-next/watchers)
-[![Downloads](https://img.shields.io/github/downloads/ProjectCampus-CH/exam-showboard-next/total?style=social&label=Downloads&logo=github)](https://github.com/ProjectCampus-CH/exam-showboard-next/releases)
-[![GitHub Issues](https://img.shields.io/github/issues-search/ProjectCampus-CH/exam-showboard-next?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ProjectCampus-CH/exam-showboard-next/issues)
-[![GitHub Discussions](https://img.shields.io/github/discussions/ProjectCampus-CH/exam-showboard-next?style=flat&logo=Github&label=Discussions)](https://github.com/ProjectCampus-CH/exam-showboard-next/discussions)
-[![创建d At](https://img.shields.io/github/created-at/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
-[![Github Last Commit](https://img.shields.io/github/last-commit/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/master)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
-[![GitHub Top Language](https://img.shields.io/github/languages/top/ProjectCampus-CH/exam-showboard-next)](https://github.com/ProjectCampus-CH/exam-showboard-next)
-
+[![stars](https://img.shields.io/github/stars/ExamAware/dsz-exam-showboard?label=Stars)](https://github.com/ExamAware/dsz-exam-showboard/stargazers)
+[![forks](https://img.shields.io/github/forks/ExamAware/dsz-exam-showboard?label=Forks)](https://github.com/ExamAware/dsz-exam-showboard/forks)
+[![Watchers](https://img.shields.io/github/watchers/ExamAware/dsz-exam-showboard?style=social)](https://github.com/ExamAware/dsz-exam-showboard/watchers)
+[![Downloads](https://img.shields.io/github/downloads/ExamAware/dsz-exam-showboard/total?style=social&label=Downloads&logo=github)](https://github.com/ExamAware/dsz-exam-showboard/releases)
+[![GitHub Issues](https://img.shields.io/github/issues-search/ExamAware/dsz-exam-showboard?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ExamAware/dsz-exam-showboard/issues)
+[![Created At](https://img.shields.io/github/created-at/ExamAware/dsz-exam-showboard)](https://github.com/ExamAware/dsz-exam-showboard)
+[![Github Last Commit](https://img.shields.io/github/last-commit/ExamAware/dsz-exam-showboard)](https://github.com/ExamAware/dsz-exam-showboard/commits/master)
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
-[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=TencentQQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
-[![All Contributors](https://img.shields.io/github/all-contributors/ProjectCampus-CH/exam-showboard-next?color=ee8449)](#贡献者)
-[![Build and Package Electron App](https://github.com/ProjectCampus-CH/exam-showboard-next/actions/workflows/build.yaml/badge.svg)](https://github.com/ProjectCampus-CH/exam-showboard-next/actions/workflows/build.yaml)
+[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=QQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+[![All Contributors](https://img.shields.io/github/all-contributors/ExamAware/dsz-exam-showboard?color=ee8449)](#贡献者)
+[![Build and Package Electron App](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml/badge.svg)](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml)
 
 ![HomePage](/.Screenshots/HomePage.png)
 ![InfoPage](/.Screenshots/InfoPage.png)
 
-一款显示当前时间与考试详细信息的看板类软件
+一款显示当前时间与考试详细信息的显示工具
 
-| 下载 | [Releases](https://github.com/ProjectCampus-CH/exam-showboard-next/releases) | [Actions](https://github.com/ProjectCampus-CH/exam-showboard-next/actions) |
+| 下载 | [Releases](https://github.com/ExamAware/dsz-exam-showboard/releases) | [Actions](https://github.com/ExamAware/dsz-exam-showboard/actions) |
 | ---- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 
 </div>
@@ -53,11 +45,9 @@
 
 默认安装路径 `AppData\Local\Programs\exam-showboard`
 
-- 编写 `json` 配置文件<br>
-  - 您可以前往[ `ExamShowBoardEditor`](https://github.com/ProjectCampus-CH/DSZExamShowBoardEditor/releases)获取生成软件<br>
-  - 您可以按照[手动编写 `json` 配置文件](https://github.com/ProjectCampus-CH/exam-showboard-next/tree/master/doc/Manually-write-JSON-configuration-file.md)教程编写配置文件
-
-
+- 编写 `json` 配置文件
+  - 您可以前往 [ `ExamShowBoardEditor`](https://github.com/ExamAware/DSZExamShowBoardEditor/releases) 获取配置文件编辑器
+  - 您可以按照[手动编写 `json` 配置文件](https://github.com/ExamAware/dsz-exam-showboard/tree/master/doc/Manually-write-JSON-configuration-file.md)教程编写配置文件
 - 打开软件，进入起始页面，点击 `打开配置` 按钮，选择配置文件
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
   - 新建 GitHub 公开存储仓库
@@ -76,11 +66,11 @@
 
 ## 遇到问题
 
-💡 如果您遇到 `Bug` ，或需要提出`优化`建议或新的`功能`，请提交 [`Issues`](https://github.com/ProjectCampus-CH/exam-showboard-next/issues) 或在 [`Discussions`](https://github.com/ProjectCampus-CH/exam-showboard-next/discussions) 中讨论。
+💡 如果您遇到 `Bug` ，或需要提出`优化`建议或新的`功能`，请提交 [`Issues`](https://github.com/ExamAware/dsz-exam-showboard/issues) 或在 [`Discussions`](https://github.com/ExamAware/dsz-exam-showboard/discussions) 中讨论。
 
 👥 您也可以加入 [`QQ群｜901670561`](https://qm.qq.com/q/zDiEipHsaI)获取帮助或交流讨论。
 
-🛠️ 欢迎为本软件进行改进或编写新功能提交 [`Pull Request`](https://github.com/ProjectCampus-CH/exam-showboard-next/pulls)
+🛠️ 欢迎为本软件进行改进或编写新功能提交 [`Pull Request`](https://github.com/ExamAware/dsz-exam-showboard/pulls)
 
 ## 开发
 
@@ -130,9 +120,9 @@ $ yarn build:linux
 
 ### 开发进度
 
-- 正在 [`master`](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/master) 分支上维护`1.2-Yesod`版本。
+- 正在 [`master`](https://github.com/ExamAware/dsz-exam-showboard/commits/master) 分支上维护`1.2-Yesod`版本。
 
-- 正在 [`dev`](https://github.com/ProjectCampus-CH/exam-showboard-next/commits/dev) 分支上开发`1.3-HOD`版本。
+- 正在 [`dev`](https://github.com/ExamAware/dsz-exam-showboard/commits/dev) 分支上开发`1.3-HOD`版本。
 
 ## 贡献者
 
@@ -161,8 +151,8 @@ $ yarn build:linux
 
 <div align="center">
 
-[![Star 历史](https://starchart.cc/ProjectCampus-CH/exam-showboard-next.svg?variant=adaptive)](https://starchart.cc/ProjectCampus-CH/exam-showboard-next/stargazers)
+[![Star 历史](https://starchart.cc/ExamAware/dsz-exam-showboard.svg?variant=adaptive)](https://starchart.cc/ExamAware/dsz-exam-showboard/stargazers)
 
-如果这个项目对您有帮助，请点亮 Star [⭐](#exam-showboard-next)
+如果这个项目对您有帮助，请点亮 Star ⭐｜[返回顶部](#%20%3Cimage%20src=%22resources/icon.png%22%20height=%2236%22/%3E%20ExamShowboard)
 
 </div>
