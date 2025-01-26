@@ -39,7 +39,7 @@
     "uuid": "^9.0.1",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-layouts": "^0.11.0",
-    "vue": "^3.4.34",
+    "vue": "^3.5.13",
     "vue-showdown": "^4.2.0",
     "vuetify": "^3.5.8"
   },
