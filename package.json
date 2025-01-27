@@ -34,7 +34,7 @@
     "date-fns": "^3.6.0",
     "github-markdown-css": "^5.5.1",
     "moment": "^2.30.1",
-    "pinia-plugin-persistedstate": "^3.2.1",
+    "pinia-plugin-persistedstate": "^4.2.0",
     "roboto-fontface": "*",
     "uuid": "^9.0.1",
     "vite-plugin-svg-icons": "^2.0.1",
