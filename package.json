@@ -1,7 +1,7 @@
 {
   "name": "examshowboard",
   "version": "1.2.5",
-  "description": "电子考试展示板",
+  "description": "考试展板",
   "main": "./out/main/index.js",
   "author": "Hello8693&MKStoler <hello8693@hello8693.xyz>",
   "homepage": "https://edicdn.eu.org/",
@@ -39,7 +39,7 @@
     "uuid": "^9.0.1",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-layouts": "^0.11.0",
-    "vue": "^3.4.34",
+    "vue": "^3.5.13",
     "vue-showdown": "^4.2.0",
     "vuetify": "^3.5.8"
   },
@@ -51,7 +51,7 @@
     "@rushstack/eslint-patch": "^1.6.1",
     "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.0.3",
-    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "commitlint": "^19.3.0",
     "core-js": "^3.34.0",

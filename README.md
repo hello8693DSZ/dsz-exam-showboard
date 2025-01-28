@@ -6,11 +6,12 @@
 [![forks](https://img.shields.io/github/forks/ExamAware/dsz-exam-showboard?label=Forks)](https://github.com/ExamAware/dsz-exam-showboard/forks)
 [![Watchers](https://img.shields.io/github/watchers/ExamAware/dsz-exam-showboard?style=social)](https://github.com/ExamAware/dsz-exam-showboard/watchers)
 [![Downloads](https://img.shields.io/github/downloads/ExamAware/dsz-exam-showboard/total?style=social&label=Downloads&logo=github)](https://github.com/ExamAware/dsz-exam-showboard/releases)
+[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FExamAware%2Fdsz-exam-showboard&label=Visitors&countColor=%23263759&style=flat&labelStyle=none)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FExamAware%2Fdsz-exam-showboard)
 [![GitHub Issues](https://img.shields.io/github/issues-search/ExamAware/dsz-exam-showboard?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ExamAware/dsz-exam-showboard/issues)
 [![Created At](https://img.shields.io/github/created-at/ExamAware/dsz-exam-showboard)](https://github.com/ExamAware/dsz-exam-showboard)
 [![Github Last Commit](https://img.shields.io/github/last-commit/ExamAware/dsz-exam-showboard)](https://github.com/ExamAware/dsz-exam-showboard/commits/master)
 [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg 'LICENSE')](LICENSE)
-[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=QQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=QQ)](https://qm.qq.com/q/zDiEipHsaI)
 [![All Contributors](https://img.shields.io/github/all-contributors/ExamAware/dsz-exam-showboard?color=ee8449)](#贡献者)
 [![Build and Package Electron App](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml/badge.svg)](https://github.com/ExamAware/dsz-exam-showboard/actions/workflows/build.yaml)
 
@@ -52,7 +53,7 @@
 - 或使用集控（仿照 [`ClassIsland` 集控使用方法](https://docs.classisland.tech/management/tutorial-create-management-config.html)）
   - 新建 GitHub 公开存储仓库
   - 上传上面提到的 `exam_config.json` 文件
-  - 复制 `Raw` 直链粘贴到应用`请求地址`文本框并保存
+  - 复制 `Raw` 直链粘贴到应用 `请求地址` 文本框并保存
 
 > [!tip]
 >
@@ -120,9 +121,7 @@ $ yarn build:linux
 
 ### 开发进度
 
-- 正在 [`master`](https://github.com/ExamAware/dsz-exam-showboard/commits/master) 分支上维护`1.2-Yesod`版本。
-
-- 正在 [`dev`](https://github.com/ExamAware/dsz-exam-showboard/commits/dev) 分支上开发`1.3-HOD`版本。
+- 正在 [`master`](https://github.com/ExamAware/dsz-exam-showboard/commits/master) 分支上维护`v1.2`版本。
 
 ## 贡献者
 
