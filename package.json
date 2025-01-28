@@ -1,7 +1,7 @@
 {
   "name": "examshowboard",
   "version": "1.2.5",
-  "description": "电子考试展示板",
+  "description": "考试展板",
   "main": "./out/main/index.js",
   "author": "Hello8693&MKStoler <hello8693@hello8693.xyz>",
   "homepage": "https://edicdn.eu.org/",

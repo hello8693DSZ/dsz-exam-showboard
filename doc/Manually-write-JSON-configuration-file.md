@@ -3,7 +3,7 @@
 
 > [!warning]
 >
-> 请确保 `exam_config.json` 文件编码为 `UTF-8`，换行符为 `LF`，按照`json`文件格式填写。不然可能会出一些神奇的 Bug。
+> 请确保 `exam_config.json` 文件编码为 `UTF-8`，换行符为 `LF`，按照`json`文件格式填写。**（不然可能会出一些神奇的 Bug）**
 >
 > 不确定？可以使用 [VSCode](https://code.visualstudio.com/) 打开、编辑文件，右下角显示编码格式和换行方式，点击即可更改。
 

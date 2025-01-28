@@ -54,7 +54,7 @@ class WindowManager {
       return this.MainWindow;
     }
     this.MainWindow = this.createWindow('mainWindow', {
-      title: 'DSZ ExamShowboard 考试看板',
+      title: 'ExamShowboard 考试看板',
       fullscreen: true
     });
     this.MainWindow.on('close', () => {
