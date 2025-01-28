@@ -20,8 +20,9 @@
 
 一款显示当前时间与考试详细信息的显示工具
 
-| 下载 | [Releases](https://github.com/ExamAware/dsz-exam-showboard/releases) | [Actions](https://github.com/ExamAware/dsz-exam-showboard/actions) |
-| ---- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| | 🚀**发行版** | **🚧当前构建** |
+| --- | --- | --- |
+| **下载** | [Releases](https://github.com/ExamAware/dsz-exam-showboard/releases) | [Actions](https://github.com/ExamAware/dsz-exam-showboard/actions) |
 
 </div>
 
@@ -43,9 +44,6 @@
 ## 开始使用
 
 - 下载安装程序并运行
-
-默认安装路径 `AppData\Local\Programs\exam-showboard`
-
 - 编写 `json` 配置文件
   - 您可以前往 [ `ExamShowBoardEditor`](https://github.com/ExamAware/DSZExamShowBoardEditor/releases) 获取配置文件编辑器
   - 您可以按照[手动编写 `json` 配置文件](https://github.com/ExamAware/dsz-exam-showboard/tree/master/doc/Manually-write-JSON-configuration-file.md)教程编写配置文件
@@ -57,7 +55,7 @@
 
 > [!tip]
 >
-> 可以在 `Raw 文件` 前加上镜像源，如
+> 可以在 `Raw 文件` 前加上镜像源链接，如
 >
 > ```txt
 > https://github.moeyy.xyz/https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/main/exam_config.json
